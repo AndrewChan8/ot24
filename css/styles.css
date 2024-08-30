@@ -1,0 +1,62 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("../assets/images/background.png");
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    height: auto;
+    background-image: url("../assets/images/topbar.png");
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+}
+
+.navlinks {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.navlinks li a {
+    display: block;
+    padding: 10px 15px; /* Adjust padding for better fit */
+    color: white; /* Default text color */
+    text-decoration: none;
+    position: relative;
+    overflow: hidden; /* Ensures the image doesn’t overflow */
+    text-decoration: none;
+    color: #fff;
+    font-size: 19px;
+    transition: color 0.3s ease;
+    font-family: "Climate Crisis", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+    "YEAR" 1979;
+}
+
+.navlinks li a:hover {
+    background-image: url("../assets/images/navbarHover.png");
+    background-size: contain; 
+    background-position: center; 
+    background-repeat: no-repeat;
+}
+/* 
+.navbar .logo {
+    margin-left: auto;
+} */
+
+.navbar .logo img {
+    height: 50px;
+}
