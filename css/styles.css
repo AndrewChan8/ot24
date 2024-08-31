@@ -9,54 +9,65 @@ body {
     background-image: url("../assets/images/background.png");
 }
 
+/* Container for the navbar and logo */
+.navbarContainer {
+    display: flex;
+    justify-content: center; /* Center the navbar horizontally */
+    align-items: center; /* Center items vertically */
+    background-image: url('../assets/images/topbar.png');
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    height: 150px; /* Adjust height as needed */
+    padding: 0 1rem; /* Optional padding */
+    overflow: hidden;
+    position: relative; /* Needed for absolute positioning of the logo */
+}
+
+/* Navbar styling */
 .navbar {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 2rem;
-    height: auto;
-    background-image: url("../assets/images/topbar.png");
-    background-size: cover; 
-    background-position: center; 
-    background-repeat: no-repeat;
+    justify-content: center; /* Center the navbar items horizontally */
+    align-items: center; /* Center the items vertically */
+    flex-grow: 1; /* Allow the navbar to take up available space */
 }
 
 .navlinks {
     list-style: none;
     display: flex;
     gap: 1.5rem;
+    padding: 0;
+    margin: 0;
 }
 
 .navlinks li a {
     display: block;
-    padding: 10px 15px; /* Adjust padding for better fit */
-    color: white; /* Default text color */
+    padding: 45px 40px;
+    color: white;
     text-decoration: none;
-    position: relative;
-    overflow: hidden; /* Ensures the image doesn’t overflow */
-    text-decoration: none;
-    color: #fff;
-    font-size: 19px;
-    transition: color 0.3s ease;
+    font-size: 25px;
     font-family: "Climate Crisis", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-    font-variation-settings:
-    "YEAR" 1979;
 }
 
 .navlinks li a:hover {
     background-image: url("../assets/images/navbarHover.png");
-    background-size: contain; 
-    background-position: center; 
+    color: #fff;
+    background-size: contain;
+    background-position: center;
     background-repeat: no-repeat;
+    opacity: 0.5;
 }
-/* 
-.navbar .logo {
-    margin-left: auto;
-} */
 
-.navbar .logo img {
-    height: 50px;
+.navlinks li a:active {
+    opacity: 1;
+}
+
+/* Logo styling */
+.logo {
+    position: absolute; /* Absolute positioning to place the logo outside of normal flow */
+    right: 3rem; /* Adjust to place the logo at the desired distance from the right edge */
+}
+
+.logo img {
+    height: 80px; /* Adjust height as needed */
 }
