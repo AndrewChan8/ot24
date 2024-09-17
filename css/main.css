@@ -1,0 +1,24 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 200vh;
+}
+
+.mainBackground {
+    display: flex;
+    justify-content: center; 
+    top: 0;
+    left: 0;
+    position: fixed;
+}
+
+
+.scroll-container {
+    height: 200px; /* Set the height to limit the visible area */
+    overflow-y: scroll; /* Enable scrolling on overflow */
+    border: 1px solid black;
+}

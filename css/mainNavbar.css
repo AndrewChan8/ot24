@@ -1,0 +1,87 @@
+/* Container for the entire navbar, set to a fixed position at the top of the page */
+.navbarContainer {
+    display: flex; /* Use flexbox layout to align children */
+    justify-content: space-between; /* Space out the children evenly, pushing them to the edges */
+    align-items: center; /* Center children vertically within the container */
+    position: fixed; /* Fixes the navbar to the top of the viewport */
+    top: 0; /* Aligns the container to the top of the viewport */
+    left: 0; /* Aligns the container to the left edge of the viewport */
+    width: 100%; /* Ensures the navbar spans the full width of the viewport */
+}
+
+/* Wrapper for centering the navbar content horizontally */
+.navbarWrapper {
+    display: flex; /* Use flexbox layout for the wrapper */
+    flex: 1; /* Allow the wrapper to grow and take up available space */
+    justify-content: center; /* Center the content horizontally */
+}
+
+/* Container for the navigation links, aligning items in a row */
+.navbar {
+    display: flex; /* Use flexbox layout */
+    align-items: center; /* Center items vertically within the navbar */
+}
+
+/* Styling for the list of navigation links */
+.navlinks { 
+    list-style: none; /* Remove default list bullet points */
+    display: flex; /* Align links horizontally */
+    gap: 3rem; /* Space between each navigation link */
+}
+
+/* Background image for the navbar, set to cover the entire container */
+.navbarBackground {
+    position: absolute; /* Position it absolutely relative to its nearest positioned ancestor */
+    width: 100%; /* Ensure it spans the full width of the navbar */
+    height: 100%; /* Ensure it spans the full height of the navbar */
+    z-index: -1; /* Place it behind other content in the navbar */
+} 
+
+/* Styling for each navigation link */
+.navlinks li a {
+    font-family: "Climate Crisis", sans-serif; /* Font styling */
+    display: block; /* Make the link a block-level element */
+    font-size: 2.5rem; /* Font size for the link text */
+    color: white; /* Text color */
+    text-decoration: none; /* Remove underline from links */
+    padding: 1rem 2.5rem; /* Padding inside the link */
+    background-size: cover; /* Ensure background image covers the whole link */
+    background-position: center; /* Center the background image within the link */
+    background-repeat: no-repeat; /* Avoid repeating the background image */
+    position: relative; /* Allows for relative positioning of pseudo-elements if needed */
+    transition: background 0.3s ease; /* Smooth transition for background change on hover */
+}
+
+/* Styling for the logo container to align it to the right */
+.logo {
+    margin-left: auto; /* Pushes the logo to the right edge of the navbar */
+    padding: 2rem; /* Adds padding around the logo */
+}
+
+/* Styling for the logo image */
+.logo img {
+    height: 6rem; /* Set a fixed height for the logo image */
+    width: auto; /* Maintain the aspect ratio of the logo image */
+}
+
+/* Hover state for navigation links, ensuring background image covers the entire link */
+.navlinks li a.home:hover,
+.navlinks li a.mappools:hover,
+.navlinks li a.stats:hover,
+.navlinks li a.schedule:hover,
+.navlinks li a.teams:hover {
+    background-size: cover; /* Ensure the background image covers the whole link */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Avoid repeating the background image */
+}
+
+.navlinks li a.mappools:hover,
+.navlinks li a.schedule:hover {
+    background-image: url("../assets/images/mappoolsbg.png"); /* Mappools link hover image */
+}
+
+.navlinks li a.stats:hover, 
+.navlinks li a.teams:hover,
+.navlinks li a.home:hover {
+    background-image: url("../assets/images/statsbg.png"); /* Stats and Teams link hover image */
+}
