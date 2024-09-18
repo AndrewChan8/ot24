@@ -6,7 +6,9 @@
 
 body {
     height: 200vh;
+    background: url("../assets/images/background.png")
 }
+
 
 .mainBackground {
     display: flex;
