@@ -1,39 +1,34 @@
-.mapppoolContainer {
+.mapppoolNavWrapper {
     margin-top: 15rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    width: 100vw;
 }
 
 .mappoolNavbarContainer {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     background-color: #01211c;
-    width: 80%;
     height: 4rem;
     border-radius: 3rem 3rem 0 0;
 }
 
 .mappoolNavbar {
     display: flex;
-    justify-content: center;
-    width: 100%;
+    justify-content: space-evenly;
 }
 
 .mappoolLinks{
     list-style-type: none;
     display: flex;
-    width: 100%;
+    width: 80%;
     margin: 0;
-    padding-left: 0;
-    padding-right: 0;
 }
 
 .mappoolLinks li a {
     text-decoration: none;
-    display: flex;
     font-family: "Climate Crisis", sans-serif;
     color: white;
     font-size: 2rem;
