@@ -6,14 +6,14 @@
 
 body {
     height: 100vh;
-    background: url("../assets/images/background.png");
+    background: url("../assets/images/main/background.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
 
-.mainBackground {
+#mainBackground {
     display: flex;
     justify-content: center; 
     top: 0;
@@ -22,7 +22,7 @@ body {
 }
 
 
-.scroll-container {
+#scroll-container {
     height: 200px; /* Set the height to limit the visible area */
     overflow-y: scroll; /* Enable scrolling on overflow */
     border: 1px solid black;

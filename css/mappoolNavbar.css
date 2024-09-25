@@ -1,12 +1,11 @@
-.mapppoolNavWrapper {
+#mapppoolNavWrapper {
     margin-top: 15rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100vw;
 }
 
-.mappoolNavbarContainer {
+#mappoolNavbarContainer {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -15,32 +14,28 @@
     border-radius: 3rem 3rem 0 0;
 }
 
-.mappoolNavbar {
-    display: flex;
-    justify-content: space-evenly;
-}
-
-.mappoolLinks{
+#mappoolLinks{
     list-style-type: none;
     display: flex;
-    width: 80%;
+    justify-content: space-evenly;
     margin: 0;
+    padding-left: 0;
 }
 
-.mappoolLinks li a {
+#mappoolLinks li a {
     text-decoration: none;
     font-family: "Climate Crisis", sans-serif;
     color: white;
     font-size: 2rem;
-    padding: .5rem 2.2rem; /* fixed padding issue */
+    padding: .68rem 2.2rem;
 }
 
-.mappoolLinks li a:hover {
+#mappoolLinks li a:hover {
     background-color: #145f48;
     border-radius: 3rem 3rem 0 0;
 }
-.mappoolLinks li:first-child a:hover,
-.mappoolLinks li:last-child a:hover {
+#mappoolLinks li:first-child a:hover,
+#mappoolLinks li:last-child a:hover {
     background-color: #145f48;
     border-radius: 3rem 3rem 0 0;
 }

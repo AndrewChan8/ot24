@@ -21,78 +21,67 @@
     <title>OT 24 Main</title>
 </head>
 <body>
-    <div class="navbarContainer">
-        <div class="navbarWrapper">
-            <div class="navbarlinksContainer">
-                <ul class="navlinks">
-                    <li><a href="" class="home">Home</a></li>
-                    <li><a href="" class="mappools">Mappools</a></li>
-                    <li><a href="" class="stats">Stats</a></li>
-                    <li><a href="" class="schedule">Schedule</a></li>
-                    <li><a href="" class="teams">Teams</a></li>
+    <div id="navbarContainer">
+        <div id="navbarWrapper">
+            <div id="navbarlinksContainer">
+                <ul id="navlinks">
+                    <li><a href="" id="home">Home</a></li>
+                    <li><a href="" id="mappools">Mappools</a></li>
+                    <li><a href="" id="stats">Stats</a></li>
+                    <li><a href="" id="schedule">Schedule</a></li>
+                    <li><a href="" id="teams">Teams</a></li>
                 </ul>
             </div>
-            <div class="logo">
-                <img src="../assets/images/OREGON TOURNAMENT 2024.png">
+            <div id="logo">
+                <img src="../assets/images/mainNavbar/logo.png">
             </div>
         </div>
     </div>
     
-    <div class="mapppoolNavWrapper">
-        <div class="mappoolNavbarContainer">
-            <nav class="mapppoolNavbar">
-                <ul class="mappoolLinks">
-                    <li><a href="" class="qualifiers">Qualifiers</a></li>
-                    <li><a href="" class="quarterFinals">Quarterfinals</a></li>
-                    <li><a href="" class="semifinals">Semifinals</a></li>
-                    <li><a href="" class="finals">Finals</a></li>
-                    <li><a href="" class="grandFinals">Grandfinals</a></li>
+    <div id="mapppoolNavWrapper">
+        <div id="mappoolNavbarContainer">
+            <nav id="mapppoolNavbar">
+                <ul id="mappoolLinks">
+                    <li><a href="" id="qualifiers">Qualifiers</a></li>
+                    <li><a href="" id="quarterFinals">Quarterfinals</a></li>
+                    <li><a href="" id="semifinals">Semifinals</a></li>
+                    <li><a href="" id="finals">Finals</a></li>
+                    <li><a href="" id="grandFinals">Grandfinals</a></li>
                 </ul>
             </nav>
         </div>
     </div>
-    <div class="mappoolListWrapper">
-        <div class="mappoolCardContainer">
-            <div class="mappoolCard">
-                <span>[000000]</span>
-                <ul>
-                    <li>star</li>
-                    <li>BPM</li>
-                    <li>length</li>
-                </ul>
-                <span>MOD</span>
-                <span>Artist</span>
-                <span>Song Name</span>
-                <img class="banner" src="../assets/images/mappoolBanner.png">
-            </div>
-            <div class="mappoolCard">
-                <span>[000000]</span>
-                <ul>
-                    <li>star</li>
-                    <li>BPM</li>
-                    <li>length</li>
-                </ul>
-                <span>MOD</span>
-                <span>Artist</span>
-                <span>Song Name</span>
-                <img class="banner" src="../assets/images/mappoolBanner.png">
-            </div>
-            <div class="mappoolCard">
-                <span>[000000]</span>
-                <ul>
-                    <li>star</li>
-                    <li>BPM</li>
-                    <li>length</li>
-                </ul>
-                <span>MOD</span>
-                <span>Artist</span>
-                <span>Song Name</span>
-                <img class="banner" src="../assets/images/mappoolBanner.png">
-            </div>
-    </div>
-        
-    </div>
 
+    <div id="mappoolListWrapper">
+        <div id="mappoolCardContainer">
+            <div id="mappoolCard">
+                <div id="mapBannerWrapper">
+                    <img id="banner" src="../assets/images/mappoolCard/mappoolBanner.png">
+                    <!-- <img id="bannerBorder" src="../assets/images/mappoolCard/bannerBorder.png"> -->
+                     <div id="mapIDWrapper">
+                         <span id="mapID">555797</span>
+                         <img id="mapIDBackground" src="../assets/images/mappoolCard/mapID.png">
+                     </div>
+                </div>
+                <div id="mapStats">
+                    <ul>
+                        <li>8.66 <img class="mapIcon" src="../assets/images/mappoolCard/starIcon.png"></li> 
+                        <li>240 <img class="mapIcon" src="../assets/images/mappoolCard/speedIcon.png"></li>
+                        <li>3:14 <img class="mapIcon" src="../assets/images/mappoolCard/timelapseIcon.png"></li>
+                    </ul>
+                </div>
+            </div>
+            <div id="mapCreator">
+                <div id="modWrapper">
+                    <span id="mod">HR1</span>
+                    <img id="modBackground"src="../assets/images/mappoolCard/modBackground.png"
+                </div>
+                <div id="songInfo">
+                    <span id="song">UNDEAD CORPORATION</span>
+                    <span id="artist">EVERYTHING WILL FREEZE</span>
+                </div>
+            </div>
+        </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     
 </body>

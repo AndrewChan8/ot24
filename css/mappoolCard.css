@@ -1,18 +1,120 @@
-.mappooListWrapper{
+#mappoolListWrapper {
     display: flex;
     justify-content: center;
-    width: 100%;
+    background-color: #145f48;
 }
 
-.mappoolCardContainer{
-    display: flex; 
+#mappoolCardContainer {
+    background-color: #67bd90;
+    border-radius: 20px;
+}
+
+#mappoolCard {
+    /* border: solid; */
+    position: relative;
+    display: flex;
+}
+
+#bannerBorder {
+    position: absolute;
+    top: 0; left: 0;
+    width: 21rem;
+    height: 10rem;
+}
+
+#banner {
+    width: 21rem;
+    height: 8.5rem;
+    border-radius: 20px;
+}
+
+#mapStats {
+    display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    border: solid;
-    width: 80%;
 }
 
-.banner{
-    width: 20rem;
+#mapStats ul {
+    list-style: none;
+    font-size:1.5rem;
+    font-family: "Fredoka", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    color: white;
+    display: flex;                 
+    flex-direction: column;        
+    justify-content: space-between;
+    flex-grow: 1;
+    padding: 10px 15px;
+}
+
+#mapIDBackground {
+    position: absolute;
+    top: 0; left: 0;
+    padding-left: 15px;
+}
+
+#mapID {
+    position: absolute;
+    top: 0; left: 0;
+    align-items: center;
+    padding: 12px 24px;
+    font-family: "Fredoka", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    color: white;
+    letter-spacing: .33em;
+    z-index: 3;
+}
+
+.mapIcon {
+    width: 1.3rem;
+    height: 1.3rem;
+}
+
+#mapCreator {
+    font-family: "Fredoka", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    color: white;
+    display: flex; 
+    justify-content: flex-start;
+}
+
+#modWrapper {
+    position: relative;
+    bottom: 0; left: 0;
+    display: flex;
+    justify-content: center;
+}
+
+#mod {
+    font-size: 3rem;
+    color:#145f48;
+    padding-left: 9px;
+    z-index: 3;
+}
+
+#modBackground{
+    position: absolute;
+    bottom: 0; left: 0;
+}
+
+#modBackground {
+    border-radius: 20px;
+}
+
+#songInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    font-size: 1.2rem;
+    padding-left: 25px;
+}
+
+#artist {
+    font-size: .9rem;
 }
