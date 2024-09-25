@@ -6,11 +6,14 @@ from dotenv import load_dotenv # type: ignore
 load_dotenv()
 
 apiKey = os.getenv('apiKey')
-token = os.getenv('access_token')
 
 MODS = {
+  "nm": 0,
+  "hd": 0,
   "hr": 16,
-  "dt": 64
+  "dt": 64,
+  "fm": 0,
+  "tb": 0
 }
 
 def getAr(ar):
@@ -34,30 +37,9 @@ def getOd(od):
   
   return round(od_num, 1)
 
-def getBeatmapData2(beatmapID, mod):
-  url = f"https://osu.ppy.sh/api/v2/beatmaps/{beatmapID}/attributes"
-
-  headers = {
-    "Authorization": f"Bearer {token}",
-    "Content-Type": "application/json",
-    "Accept": "application/json"
-  }
-
-  data = {
-    "mods": MODS[mod[0:2]],
-    "ruleset": "osu"
-  }
-
-  response = requests.post(url, headers=headers, data=json.dumps(data))
-
-  response_data = response.json()
-  data = response_data["attributes"]
-  sr = data["star_rating"]
-  return sr
-
 def getBeatmapData(beatmapID, mod):
-  mods = mod[0:2]
-  beatmapLink = f"https://osu.ppy.sh/api/get_beatmaps?k={apiKey}&b={beatmapID}"
+  mod = MODS[mod[0:2]]
+  beatmapLink = f"https://osu.ppy.sh/api/get_beatmaps?k={apiKey}&b={beatmapID}&mods={mod}"
   getBeatmap = requests.get(beatmapLink).json()
   beatmapData = {}
   beatmap = getBeatmap[0]
@@ -75,18 +57,16 @@ def getBeatmapData(beatmapID, mod):
   od = float(beatmap["diff_overall"])
   ar = float(beatmap["diff_approach"])
 
-  if mods == "hr":
+  if mod == 16:
     cs = min(float(cs) * 1.3, 10)
     ar = min(float(ar) * 1.4, 10)
     od = min(float(od) * 1.4, 10)
-    sr = getBeatmapData2(beatmapID, mod)
 
-  if mods == "dt":
+  if mod == 64:
     bpm *= 1.5
     length = round(length * (2 / 3))
     ar = getAr(ar)
     od = getOd(od)
-    sr = getBeatmapData2(beatmapID, mod)
 
   minutes = int(length) // 60
   seconds = int(length) % 60
