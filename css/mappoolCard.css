@@ -7,13 +7,16 @@
 #mappoolCardContainer {
     background-color: #67bd90;
     border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
 }
 
-#mappoolCard {
+#mappoolCardTop {
     /* border: solid; */
     position: relative;
     display: flex;
 }
+
 
 #bannerBorder {
     position: absolute;
