@@ -1,35 +1,46 @@
 #mappoolListWrapper {
     display: flex;
     justify-content: center;
-    background-color: #145f48;
 }
 
 #mappoolCardContainer {
-    background-color: #67bd90;
-    border-radius: 20px;
+    background-color: #145f48;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    width: 1525px;
+}
+
+.cardWrapper {
+    border-radius: 20px;
+    background-color: #50a77a;
+    background-color: #67bd90;
+    width: 400px;
+    height: 175px;
+    margin: 10px 15px;
 }
 
 #mappoolCardTop {
-    /* border: solid; */
     position: relative;
     display: flex;
 }
 
+
+#banner {
+    width: 315px;
+    height: 125px;
+    border-radius: 20px;
+}
 
 #bannerBorder {
     position: absolute;
     top: 0; left: 0;
     width: 21rem;
     height: 10rem;
+    z-index: 10;
 }
 
-#banner {
-    width: 21rem;
-    height: 8.5rem;
-    border-radius: 20px;
-}
 
 #mapStats {
     display: flex;
@@ -39,7 +50,7 @@
 
 #mapStats ul {
     list-style: none;
-    font-size:1.5rem;
+    font-size: 1rem;
     font-family: "Fredoka", system-ui;
     font-optical-sizing: auto;
     font-weight: 700;
@@ -95,7 +106,7 @@
 }
 
 #mod {
-    font-size: 3rem;
+    font-size: 2rem;
     color:#145f48;
     padding-left: 9px;
     z-index: 3;
