@@ -9,13 +9,13 @@
     border-bottom-left-radius: 20px;
     display: flex;
     justify-content: space-evenly;
-    width: 1525px;
+    width: 1524.99px;
 }
 
 .cardWrapper {
     border-radius: 20px;
     background-color: #50a77a;
-    background-color: #67bd90;
+    /* background-color: #67bd90; */
     width: 400px;
     height: 175px;
     margin: 10px 15px;
@@ -30,15 +30,15 @@
 #banner {
     width: 315px;
     height: 125px;
-    border-radius: 20px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
 }
 
 #bannerBorder {
     position: absolute;
     top: 0; left: 0;
-    width: 21rem;
-    height: 10rem;
-    z-index: 10;
+    width: 315px;
+    height: 125px;
 }
 
 
@@ -50,37 +50,44 @@
 
 #mapStats ul {
     list-style: none;
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-family: "Fredoka", system-ui;
     font-optical-sizing: auto;
     font-weight: 700;
     font-style: normal;
     color: white;
-    display: flex;                 
-    flex-direction: column;        
-    justify-content: space-between;
     flex-grow: 1;
-    padding: 10px 15px;
+    padding-top: 20px;
+    padding-right: 15px; padding-left: 15px;
+    margin-bottom: 0;   
+}
+
+#mapStats li {
+    display: flex; 
+    align-items: center;
+}
+#mapStats li img {
+    margin-left: 5px;
 }
 
 #mapIDBackground {
     position: absolute;
     top: 0; left: 0;
-    padding-left: 15px;
+    margin-left: 5px;
 }
 
 #mapID {
     position: absolute;
     top: 0; left: 0;
     align-items: center;
-    padding: 12px 24px;
+    padding: 12px 18px;
     font-family: "Fredoka", system-ui;
     font-optical-sizing: auto;
     font-weight: 700;
     font-style: normal;
     color: white;
-    letter-spacing: .33em;
-    z-index: 3;
+    letter-spacing: .20em;
+    z-index: 1;
 }
 
 .mapIcon {
@@ -107,8 +114,8 @@
 
 #mod {
     font-size: 2rem;
-    color:#145f48;
-    padding-left: 9px;
+    color:white;
+    margin-left: 20px;
     z-index: 3;
 }
 
@@ -118,7 +125,7 @@
 }
 
 #modBackground {
-    border-radius: 20px;
+    border-bottom-left-radius: 20px;
 }
 
 #songInfo {
@@ -126,7 +133,7 @@
     flex-direction: column;
     justify-content: space-evenly;
     font-size: 1.2rem;
-    padding-left: 25px;
+    padding-left: 40px;
 }
 
 #artist {
