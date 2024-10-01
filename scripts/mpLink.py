@@ -53,9 +53,8 @@ def getMpData(mpLink):
 
   return beatmaps, matchScores
 
-if __name__ == "__main__":
+def promptLinks():
   mpLinks = []
-
   print("Enter multiplayer lobby IDs.")
   print("Note: If you want to enter multiple at a time, seperate the IDs with spaces")
   print("To finish, enter 0 (zero)")
@@ -69,46 +68,37 @@ if __name__ == "__main__":
       mpLinks += idList
     else:
       mpLinks.append(id)
+  return mpLinks
 
+if __name__ == "__main__":
+  mpLinks = [
+111457578,
+111470883,
+111458194
+  ]
+
+  # mpLinks = promptLinks()
 
   for link in mpLinks:
     beatmaps, results = getMpData(link)
 
-    if not os.path.exists('roundOne.json'):
-      with open('roundOne.json', 'w') as file:
+    if not os.path.exists('qf.json'):
+      with open('qf.json', 'w') as file:
         json.dump({}, file)
 
-    with open('roundOne.json', 'r') as file:
+    with open('qf.json', 'r') as file:
       try:
         data = json.load(file)
       except json.JSONDecodeError:
         data = {}
     # Append the new data
+    if "beatmaps" not in data:
+      data["beatmaps"] = beatmaps
 
-  beatmaps = [
-"Happy End no Intro ga Kikoeru",
-"Monosugoi Ikioi de Keine ga Monosugoi Uta",
-"God-ish",
-"Cybernetics",
-"The Real Disappearance of Hatsune Miku",
-"Charisma Rengoku Tenshin",
-"Chousai Kenbo Sengen",
-"Siren",
-"Captain Murasa's Ass Anchor",
-"Ikanaide",
-"Grenade",
-"Ditto",
-"FREEDMAN",
-"Clumsy thoughts",
-"Rising Hope (LU-I Remix)"
-]
+    for result in results:
+      data[result] = results[result]
+      data[result]['mpLink'] = int(link)
 
-  data["beatmaps"] = beatmaps
-
-  for result in results:
-    data[result] = results[result]
-    data[result]['mpLink'] = int(link)
-
-  # Write the updated data back to the file
-  with open('roundOne.json', 'w') as file:
-    json.dump(data, file, indent=4)
+    # Write the updated data back to the file
+    with open('qf.json', 'w') as file:
+      json.dump(data, file, indent=4)
