@@ -15,6 +15,14 @@ fetch("../scripts/mappools/qf.json")
         const fm = document.getElementById("fm");
         const tb = document.getElementById("tb");
 
+        const MODS = {
+            "nm": nm,
+            "hd": hd,
+            "hr": hr,
+            "dt": dt,
+            "fm": fm,
+            "tb": tb
+        }
 
         for(const maps in mappool) {
             let map = mappool[maps];
@@ -52,16 +60,9 @@ fetch("../scripts/mappools/qf.json")
                 </div>
             `;
             let mod = maps.slice(0, 2)
-            if (mod == "nm") {
-                nm.appendChild(cardWrapper);
-            } else if (mod == "hd") {
-                hd.appendChild(cardWrapper);
-            } else if(most == "hr") {
-                hr.appendChild(cardWrapper);
-            } else if(mod == "dt") {
-                dt.appendChild(cardWrapper);
-            } else if(most == "fm") {
-                fm.appendChild(cardWrapper);
+            
+            if (modMapping[mod]) {
+                modMapping[mod].appendChild(cardWrapper);
             }
         }
     })
