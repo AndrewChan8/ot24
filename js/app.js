@@ -7,13 +7,14 @@ fetch("../scripts/mappools/qf.json")
     })
     .then(mappool => {
         // console.log(mappool);
-        const mappoolCardContainer = document.getElementById("mappoolCardContainer");
-        const nm = document.getElementById("nm");
-        const hd= document.getElementById("hd");
-        const hr = document.getElementById("hr");
-        const dt = document.getElementById("dt");
-        const fm = document.getElementById("fm");
-        const tb = document.getElementById("tb");
+        const mapIDElement = document.getElementById("mapID");
+        console.log(mapIDElement)
+        const nm = document.getElementById("nmPool");
+        const hd= document.getElementById("hdPool");
+        const hr = document.getElementById("hrPool");
+        const dt = document.getElementById("dtPool");
+        const fm = document.getElementById("fmPool");
+        const tb = document.getElementById("tbPool");
 
         const modMapping = {
             "nm": nm,
@@ -59,10 +60,16 @@ fetch("../scripts/mappools/qf.json")
                     </div>
                 </div>
             `;
-            let mod = maps.slice(0, 2)
-             console.log(modMapping[mod]);            
+            let mod = maps.slice(0, 2)         
+            
             if (modMapping[mod]) {
+        console.log(mapIDElement)
+
+                if (map.beatmap_id.lenght < 7) {
+                    mapIDElement.style.letterSpacing = "0.3em";
+                }
                 modMapping[mod].appendChild(cardWrapper);
+
             }
         }
     })

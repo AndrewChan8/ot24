@@ -2,8 +2,6 @@
     display: flex;
     justify-content: center;
     max-height: 750px;
-
-    
 }
 
 #mappoolCardContainer {
@@ -11,17 +9,31 @@
     border-bottom-right-radius: 20px;
     border-bottom-left-radius: 20px;
     display: flex;
-    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
     width: 1524.99px;
-    flex-wrap: wrap;
     overflow-y: scroll;
+}
+
+#nm, #hd, #hr, #dt, #fm, #tb {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 15px 0;
+    font-family: "Climate Crisis", sans-serif;
+    color: white;
+}
+
+#nmPool, #hdPool, #hrPool, #dtPool, #fmPool, #tbPool {
+    display: flex; 
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .cardWrapper {
     border-radius: 20px;
     background-color: #50a77a;
-    /* background-color: #67bd90; */
-    width: 400px;
+    width: 410px;
     height: 175px;
     margin: 10px 15px;
 }
@@ -79,20 +91,23 @@
 #mapIDBackground {
     position: absolute;
     top: 0; left: 0;
-    margin-left: 5px;
+    margin-left: 5px; 
+}
+
+#innerMapIDWrapper {
+    display: flex; 
+    justify-content: center;
 }
 
 #mapID {
     position: absolute;
     top: 0; left: 0;
-    align-items: center;
     padding: 12px 18px;
     font-family: "Fredoka", system-ui;
     font-optical-sizing: auto;
     font-weight: 700;
     font-style: normal;
     color: white;
-    letter-spacing: .20em;
     z-index: 1;
 }
 
@@ -139,9 +154,19 @@
     flex-direction: column;
     justify-content: flex-start;
     font-size: 1.185rem;
-    padding-left: 40px;
+    padding-left: 35px;
+    padding-right: 15px;
+    white-space: nowrap;         
+    overflow-x: scroll;            
+    text-overflow: ellipsis;     
+    width: 100%;
+
 }
 
 #artist {
     font-size: .9rem;
+}
+
+#song {
+    margin-right: 15px;
 }
