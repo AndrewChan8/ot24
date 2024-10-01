@@ -46,6 +46,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+
 }
 
 #mapStats ul {
@@ -121,7 +122,7 @@
 
 #modBackground{
     position: absolute;
-    bottom: 0; left: 0;
+    bottom: 0; left: 0;s
 }
 
 #modBackground {
@@ -131,8 +132,8 @@
 #songInfo {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
-    font-size: 1.2rem;
+    justify-content: flex-start;
+    font-size: 1.185rem;
     padding-left: 40px;
 }
 
