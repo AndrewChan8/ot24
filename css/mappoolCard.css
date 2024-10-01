@@ -1,6 +1,9 @@
 #mappoolListWrapper {
     display: flex;
     justify-content: center;
+    max-height: 750px;
+
+    
 }
 
 #mappoolCardContainer {
@@ -11,6 +14,7 @@
     justify-content: space-evenly;
     width: 1524.99px;
     flex-wrap: wrap;
+    overflow-y: scroll;
 }
 
 .cardWrapper {
@@ -123,7 +127,7 @@
 
 #modBackground{
     position: absolute;
-    bottom: 0; left: 0;s
+    bottom: 0; left: 0;
 }
 
 #modBackground {

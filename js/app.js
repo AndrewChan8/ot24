@@ -8,10 +8,18 @@ fetch("../scripts/mappools/qf.json")
     .then(mappool => {
         // console.log(mappool);
         const mappoolCardContainer = document.getElementById("mappoolCardContainer");
+        const nm = document.getElementById("nm");
+        const hd= document.getElementById("hd");
+        const hr = document.getElementById("hr");
+        const dt = document.getElementById("dt");
+        const fm = document.getElementById("fm");
+        const tb = document.getElementById("tb");
+
 
         for(const maps in mappool) {
             let map = mappool[maps];
-            console.log(mappool[maps].beatmap_id)
+            // console.log(mappool[maps].beatmap_id)
+            // console.log(maps);
             const cardWrapper = document.createElement('div');
             cardWrapper.classList.add("cardWrapper");
             cardWrapper.innerHTML = `
@@ -43,7 +51,18 @@ fetch("../scripts/mappools/qf.json")
                     </div>
                 </div>
             `;
-            mappoolCardContainer.appendChild(cardWrapper);
+            let mod = maps.slice(0, 2)
+            if (mod == "nm") {
+                nm.appendChild(cardWrapper);
+            } else if (mod == "hd") {
+                hd.appendChild(cardWrapper);
+            } else if(most == "hr") {
+                hr.appendChild(cardWrapper);
+            } else if(mod == "dt") {
+                dt.appendChild(cardWrapper);
+            } else if(most == "fm") {
+                fm.appendChild(cardWrapper);
+            }
         }
     })
     .catch(error => {
