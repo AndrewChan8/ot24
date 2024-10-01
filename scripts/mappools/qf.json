@@ -1,5 +1,5 @@
 {
-"nm1": {
+    "nm1": {
         "title": "Happy End no Intro ga Kikoeru",
         "artist": "NEO",
         "version": "Brightly~",
@@ -104,7 +104,7 @@
         "ar": "8.0",
         "od": "8.0"
     },
-    "hd3": {
+    "hr1": {
         "title": "Siren",
         "artist": "lapix feat. Nara Hiyori",
         "version": "this is kinda fire",
@@ -112,14 +112,14 @@
         "beatmap_link": "https://osu.ppy.sh/beatmapsets/1990714#osu/4135805",
         "mapper_link": "https://osu.ppy.sh/users/17327665",
         "beatmap_id": "4135805",
-        "star_rating": "5.86",
+        "star_rating": "6.27",
         "bpm": "170.0",
         "length": "3:37",
-        "cs": "4.0",
-        "ar": "9.5",
-        "od": "9.0"
+        "cs": "5.2",
+        "ar": "10",
+        "od": "10"
     },
-    "hr1": {
+    "hr2": {
         "title": "Captain Murasa's Ass Anchor",
         "artist": "IOSYS",
         "version": "Ketsu Ankaa",
@@ -134,7 +134,7 @@
         "ar": "10",
         "od": "10"
     },
-    "hr2": {
+    "dt1": {
         "title": "Ikanaide",
         "artist": "Kano",
         "version": "Insane",
@@ -142,14 +142,14 @@
         "beatmap_link": "https://osu.ppy.sh/beatmapsets/1288542#osu/2675020",
         "mapper_link": "https://osu.ppy.sh/users/16368505",
         "beatmap_id": "2675020",
-        "star_rating": "4.94",
-        "bpm": "184.0",
-        "length": "2:53",
-        "cs": "6.0",
-        "ar": "10",
-        "od": "10"
+        "star_rating": "6.2",
+        "bpm": "276.0",
+        "length": "1:55",
+        "cs": "4.6",
+        "ar": "10.3",
+        "od": "9.8"
     },
-    "hr3": {
+    "dt2": {
         "title": "Grenade",
         "artist": "GhostFinal",
         "version": "D.N.Angel",
@@ -157,14 +157,14 @@
         "beatmap_link": "https://osu.ppy.sh/beatmapsets/49507#osu/152815",
         "mapper_link": "https://osu.ppy.sh/users/207340",
         "beatmap_id": "152815",
-        "star_rating": "4.7",
-        "bpm": "147.0",
-        "length": "2:37",
-        "cs": "5.2",
-        "ar": "10",
+        "star_rating": "6.26",
+        "bpm": "220.5",
+        "length": "1:45",
+        "cs": "4.0",
+        "ar": "9.7",
         "od": "8.4"
     },
-    "dt1": {
+    "dt3": {
         "title": "Ditto",
         "artist": "NewJeans",
         "version": "tynamo",
@@ -179,7 +179,7 @@
         "ar": "9.9",
         "od": "9.8"
     },
-    "dt2": {
+    "fm1": {
         "title": "FREEDMAN",
         "artist": "FujuniseikouyuuP",
         "version": "Nouk",
@@ -187,14 +187,14 @@
         "beatmap_link": "https://osu.ppy.sh/beatmapsets/108529#osu/283965",
         "mapper_link": "https://osu.ppy.sh/users/243917",
         "beatmap_id": "283965",
-        "star_rating": "8.21",
-        "bpm": "360.0",
-        "length": "1:35",
+        "star_rating": "5.64",
+        "bpm": "240.0",
+        "length": "2:22",
         "cs": "4.0",
-        "ar": "10.3",
-        "od": "9.1"
+        "ar": "9.0",
+        "od": "7.0"
     },
-    "dt3": {
+    "fm2": {
         "title": "Clumsy thoughts",
         "artist": "Nekomata Master feat. *spiLa*",
         "version": "Emotions",
@@ -202,14 +202,14 @@
         "beatmap_link": "https://osu.ppy.sh/beatmapsets/1544696#osu/3157348",
         "mapper_link": "https://osu.ppy.sh/users/3181083",
         "beatmap_id": "3157348",
-        "star_rating": "7.28",
-        "bpm": "229.5",
-        "length": "1:17",
+        "star_rating": "5.09",
+        "bpm": "153.0",
+        "length": "1:55",
         "cs": "5.0",
-        "ar": "9.7",
-        "od": "9.8"
+        "ar": "8.0",
+        "od": "8.0"
     },
-    "fm1": {
+    "tb": {
         "title": "Rising Hope (LU-I Remix)",
         "artist": "LiSA",
         "version": "Irregularity",
