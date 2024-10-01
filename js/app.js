@@ -15,7 +15,7 @@ fetch("../scripts/mappools/qf.json")
         const fm = document.getElementById("fm");
         const tb = document.getElementById("tb");
 
-        const MODS = {
+        const modMapping = {
             "nm": nm,
             "hd": hd,
             "hr": hr,
@@ -60,7 +60,7 @@ fetch("../scripts/mappools/qf.json")
                 </div>
             `;
             let mod = maps.slice(0, 2)
-            
+             console.log(modMapping[mod]);            
             if (modMapping[mod]) {
                 modMapping[mod].appendChild(cardWrapper);
             }
