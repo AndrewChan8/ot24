@@ -11,6 +11,7 @@
     align-items: center;
     background-color: #01211c;
     height: 4rem;
+    width: 1500px;
     border-radius: 3rem 3rem 0 0;
 }
 
@@ -27,7 +28,7 @@
     font-family: "Climate Crisis", sans-serif;
     color: white;
     font-size: 2rem;
-    padding: .68rem 2.2rem;
+    padding: .68rem 1.5rem;
 }
 
 #mappoolLinks li a:hover {

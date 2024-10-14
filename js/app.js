@@ -43,9 +43,9 @@ fetch("../scripts/mappools/qf.json")
                     </div>
                     <div id="mapStats">
                         <ul>
-                            <li>${map.star_rating}<img class="mapIcon" src="../assets/images/mappoolCard/star.png" alt="Star Icon"></li> 
-                            <li>${map.bpm}<img class="mapIcon" src="../assets/images/mappoolCard/speed.png" alt="Speed Icon"></li>
-                            <li>${map.length}<img class="mapIcon" src="../assets/images/mappoolCard/timeLapse.png" alt="Time Icon"></li>
+                            <li>${map.star_rating}<img class="mapIcon" src="../assets/images/mappoolCard/star.svg" alt="Star Icon"></li> 
+                            <li>${map.bpm}<img class="mapIcon" src="../assets/images/mappoolCard/speed.svg" alt="Speed Icon"></li>
+                            <li>${map.length}<img class="mapIcon" src="../assets/images/mappoolCard/timelapse.svg" alt="Time Icon"></li>
                         </ul>
                     </div>
                 </div>
