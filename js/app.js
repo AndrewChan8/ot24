@@ -53,7 +53,7 @@ fetch("../scripts/mappools/qf.json")
                 <div id="mapCreator">
                     <div id="modWrapper">
                         <span id="mod">${maps}</span>
-                        <img id="modBackground" src="../assets/images/mappoolCard/modBackground${mod}.png" alt="Mod Background">
+                        <img id="modBackground" src="../assets/images/mappoolCard/modBackgroundHR.png" alt="Mod Background">
                     </div>
                     <div id="songInfo">
                         <span id="song">${map.title}</span>
@@ -64,11 +64,7 @@ fetch("../scripts/mappools/qf.json")
     
             
             if (modMapping[mod]) {
-        console.log(mapIDElement)
 
-                if (map.beatmap_id.lenght < 7) {
-                    mapIDElement.style.letterSpacing = "0.3em";
-                }
                 modMapping[mod].appendChild(cardWrapper);
 
             }
