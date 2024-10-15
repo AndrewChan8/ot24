@@ -53,7 +53,7 @@ fetch("../scripts/mappools/qf.json")
                 <div id="mapCreator">
                     <div id="modWrapper">
                         <span id="mod">${maps}</span>
-                        <img id="modBackground" src="../assets/images/mappoolCard/modBackgroundHR.png" alt="Mod Background">
+                        <img id="modBackground" src="../assets/images/mappoolCard/modBackground${mod.toUpperCase()}.png" alt="Mod Background">
                     </div>
                     <div id="songInfo">
                         <span id="song">${map.title}</span>
