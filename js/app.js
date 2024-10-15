@@ -29,6 +29,7 @@ fetch("../scripts/mappools/qf.json")
             let map = mappool[maps];
             // console.log(mappool[maps].beatmap_id)
             // console.log(maps);
+            let mod = maps.slice(0, 2)     
             const cardWrapper = document.createElement('div');
             cardWrapper.classList.add("cardWrapper");
             cardWrapper.innerHTML = `
@@ -52,7 +53,7 @@ fetch("../scripts/mappools/qf.json")
                 <div id="mapCreator">
                     <div id="modWrapper">
                         <span id="mod">${maps}</span>
-                        <img id="modBackground" src="../assets/images/mappoolCard/modBackgroundHR.png" alt="Mod Background">
+                        <img id="modBackground" src="../assets/images/mappoolCard/modBackground${mod}.png" alt="Mod Background">
                     </div>
                     <div id="songInfo">
                         <span id="song">${map.title}</span>
@@ -60,7 +61,7 @@ fetch("../scripts/mappools/qf.json")
                     </div>
                 </div>
             `;
-            let mod = maps.slice(0, 2)         
+    
             
             if (modMapping[mod]) {
         console.log(mapIDElement)
