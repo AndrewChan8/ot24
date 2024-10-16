@@ -1,7 +1,8 @@
 #mapppoolNavWrapper {
     margin-top: 15rem;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
+    width: 100%;
     align-items: center;
 }
 

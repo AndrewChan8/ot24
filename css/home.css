@@ -1,0 +1,44 @@
+#wrapper {
+    display: flex;
+    justify-content: space-between; /* Space between columns */
+    padding: 20px; /* Padding around the wrapper */
+}
+
+#info, #moreInfo {
+    flex: 1; /* Equal width for both columns */
+    margin: 0 10px; /* Add horizontal margin between columns */
+    padding: 20px; /* Add padding inside the columns for better spacing */
+}
+
+#moreInfo {
+    display: flex; /* Use flexbox for buttons */
+    flex-direction: column; /* Stack buttons vertically */
+    gap: 40px; /* Add gap between buttons */
+}
+
+#info {
+    font-family: "Fredoka", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    color: white;
+}
+
+#info {
+    font-weight: 100;
+}
+button {
+    padding: 20px;
+    background-color: #67bd90; 
+    color: white; 
+    border: none; 
+    border-radius: 20px; 
+    cursor: pointer;
+    font-family: "Climate Crisis", sans-serif;
+    color: white;
+    font-size: 2rem;
+}
+
+button:hover {
+    background-color: #0056b3; /* Darker color on hover */
+}
