@@ -9,7 +9,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Climate+Crisis&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap" rel="stylesheet">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
     <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="../css/mainNavbar.css">
@@ -17,6 +16,12 @@
     <link rel="stylesheet" href="../css/mappoolCard.css">
     <link rel="stylesheet" href="../css/home.css">
     <title>Home</title>
+    <style>
+      .content-section {
+          display: none; /* Hide all sections by default */
+      }
+      .default { display: block; }
+    </style>
 </head>
 <body>
     <div id="nav-placeholder"></div>
@@ -24,8 +29,8 @@
       <div id="mappoolNavbarContainer">
           <nav id="mapppoolNavbar">
               <ul id="mappoolLinks">
-                  <li><a href="" id="info">Info</a></li>
-                  <li><a href="" id="rules">Rules</a></li>
+                  <li><a href="#" class="nav-link" data-target="info">Info</a></li>
+                  <li><a href="#" class="nav-link" data-target="moreInfo">More Info</a></li>
               </ul>
           </nav>
       </div>
@@ -34,65 +39,53 @@
   <div id="mappoolListWrapper">
     <div id="containerCornerBackground">
         <div id="mappoolCardContainer">
-          <div id="wrapper">
-            <div id="info">
-              <h1><strong>Lorem ipsum dolor sit</strong></h1>
-              <h4>Lorem ipsum dolor sit amet, 
-                consectetur adipiscing elit, sed do eiusmod
-                 tempor incididunt ut labore et dolore magna 
-                 aliqua. Ut enim ad minim veniam, quis nostrud 
-                 exercitation ullamco laboris nisi ut aliquip ex ea
-                  commodo consequat.</h4>
-              <p>
-                Lorem ipsum dolor sit amet, 
-                consectetur adipiscing elit, sed do eiusmod
-                 tempor incididunt ut labore et dolore magna 
-                 aliqua. Ut enim ad minim veniam, quis nostrud 
-                 exercitation ullamco laboris nisi ut aliquip ex ea
-                  commodo consequat.Lorem ipsum dolor sit amet, 
-                  consectetur adipiscing elit, sed do eiusmod
-                   tempor incididunt ut labore et dolore magna 
-                   aliqua. Ut enim ad minim veniam, quis nostrud 
-                   exercitation ullamco laboris nisi ut aliquip ex ea
-                    commodo consequat.
-                    Lorem ipsum dolor sit amet, 
-                consectetur adipiscing elit, sed do eiusmod
-                 tempor incididunt ut labore et dolore magna 
-                 aliqua. Ut enim ad minim veniam, quis nostrud 
-                 exercitation ullamco laboris nisi ut aliquip ex ea
-                  commodo consequat.Lorem ipsum dolor sit amet, 
-                  consectetur adipiscing elit, sed do eiusmod
-                   tempor incididunt ut labore et dolore magna 
-                   aliqua. Ut enim ad minim veniam, quis nostrud 
-                   exercitation ullamco laboris nisi ut aliquip ex ea
-                    commodo consequat.Lorem ipsum dolor sit amet, 
-                    consectetur adipiscing elit, sed do eiusmod
-                     tempor incididunt ut labore et dolore magna 
-                     aliqua. Ut enim ad minim veniam, quis nostrud 
-                     exercitation ullamco laboris nisi ut aliquip ex ea
-                      commodo consequat.
-                      Lorem ipsum dolor sit amet, 
-                  consectetur adipiscing elit, sed do eiusmod
-                   tempor incididunt ut labore et dolore magna 
-                   aliqua. Ut enim ad minim veniam, quis nostrud 
-                   exercitation ullamco laboris nisi ut aliquip ex ea
-                    commodo consequat.
-              </p>
+            <div id="info" class="content-section default">
+              <div id="wrapper">
+                <div id="infos">
+                  <h1><strong>Lorem ipsum dolor sit</strong></h1>
+                  <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...</h4>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...
+                  </p>
+                </div>
+                <div id="otherInfo">
+                  <button>Registration</button>
+                  <button>Staff Registration</button>
+                  <button>Backup Sheet</button>
+                  <button>More Buttons</button>
+                </div>
+              </div>
             </div>
-            <div id="moreInfo">
-              <button>Registration</button>
-              <button>Staff Registration</button>
-              <button>Backup Sheet</button>
-              <button>More Buttons</button>
+            <div id="moreInfo" class="content-section">
+              <div id="infos">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in nulla id eros ullamcorper scelerisque. Ut eget bibendum ligula. In hac habitasse platea dictumst. Curabitur convallis massa sed nulla vehicula bibendum. Suspendisse potenti. Proin dictum venenatis metus, in auctor nulla ultricies vel. Vivamus eget felis at nulla consectetur fermentum. Integer nec feugiat justo, et eleifend sem. Cras tristique libero id magna pharetra, at facilisis magna consequat. Nam suscipit, mi non vehicula dictum, dui orci ultrices eros, at tempus tortor nulla sit amet ligula.
+
+Sed quis erat nec odio tincidunt fringilla. Fusce tempor tincidunt purus, vel tempor justo efficitur in. Pellentesque facilisis tristique ex, nec auctor justo facilisis non. Vivamus et libero nisi. Nunc vel scelerisque dolor. In in leo vitae turpis fermentum tempor ut eget velit. Quisque malesuada metus et turpis sodales, vel fermentum risus sodales. Ut fringilla mi id arcu dapibus, ut pharetra dolor vestibulum. In pretium, nisl in egestas fermentum, elit mi suscipit enim, non bibendum lorem elit et sem.
+
+Curabitur dapibus vel sapien vel porttitor. Praesent maximus dictum dui sit amet posuere. Suspendisse et ultricies erat. Duis imperdiet accumsan fermentum. Donec id urna nulla. Phasellus sodales consequat orci, vitae scelerisque purus rhoncus eget. Etiam eget quam tincidunt, vehicula lacus vitae, pharetra velit. Ut vitae felis at turpis vulputate pretium nec nec turpis.
+
+                </p>
             </div>
           </div>
-        </div>
     </div>
 </div>
     <script>
-    $(function(){
-      $("#nav-placeholder").load("../components/navbar.html");
-    });
+      $(function(){
+        $("#nav-placeholder").load("../components/navbar.html");
+
+        // Handle click event for navbar links
+        $(".nav-link").click(function(event) {
+          event.preventDefault(); // Prevent default anchor behavior
+          
+          // Hide all content sections
+          $(".content-section").hide();
+          
+          // Show the target section
+          const target = $(this).data("target");
+          $("#" + target).show();
+        });
+      });
     </script>
 </body>
 </html>

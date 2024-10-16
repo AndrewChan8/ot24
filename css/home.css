@@ -4,19 +4,19 @@
     padding: 20px; /* Padding around the wrapper */
 }
 
-#info, #moreInfo {
+#infos, #otherInfo {
     flex: 1; /* Equal width for both columns */
     margin: 0 10px; /* Add horizontal margin between columns */
     padding: 20px; /* Add padding inside the columns for better spacing */
 }
 
-#moreInfo {
+#otherInfo {
     display: flex; /* Use flexbox for buttons */
     flex-direction: column; /* Stack buttons vertically */
     gap: 40px; /* Add gap between buttons */
 }
 
-#info {
+#infos {
     font-family: "Fredoka", system-ui;
     font-optical-sizing: auto;
     font-weight: 700;
@@ -24,7 +24,7 @@
     color: white;
 }
 
-#info {
+#infos {
     font-weight: 100;
 }
 button {
@@ -41,4 +41,13 @@ button {
 
 button:hover {
     background-color: #0056b3; /* Darker color on hover */
+}
+
+#mappoolLinks li {
+    margin-left: 90px;
+    margin-right: 90px;
+}
+
+#mappoolLinks li a {
+    padding: .5rem 2rem;
 }
