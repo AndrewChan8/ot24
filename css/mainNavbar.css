@@ -89,34 +89,3 @@
 #navlinks li a#home:hover::before {
     background-image: url("../assets/images/mainNavbar/statsbg.png");
 }
-
-#navlinks li a#home:hover::before,
-#navlinks li a#mappools:hover::before,
-#navlinks li a#stats:hover::before,
-#navlinks li a#schedule:hover::before,
-#navlinks li a#teams:hover::before {
-    content: "";
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    bottom: 0px;
-    left: 0px;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    z-index: -1;
-    opacity: 0.5;
-}
-
-#navlinks li a#mappools:hover::before,
-#navlinks li a#schedule:hover::before {
-    background-image: url("../assets/images/mainNavbar/mappoolsbg.png");
-}
-
-#navlinks li a#stats:hover::before, 
-#navlinks li a#teams:hover::before,
-#navlinks li a#home:hover::before {
-    background-image: url("../assets/images/mainNavbar/statsbg.png");
-}
-
-
