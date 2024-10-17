@@ -33,12 +33,7 @@
 }
 
 #mappoolLinks li a:hover {
-    background-color: #145f48;
-    border-radius: 3rem 3rem 0 0;
-}
-#mappoolLinks li:first-child a:hover,
-#mappoolLinks li:last-child a:hover {
-    background-color: #145f48;
+    background-color: #145f4980;
     border-radius: 3rem 3rem 0 0;
 }
 
