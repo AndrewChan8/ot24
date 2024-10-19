@@ -1,0 +1,81 @@
+#wrapper {
+    display: flex;
+    flex-direction: column; /* Stacks sections vertically */
+    width: 800px;
+    background-color: #387f5f;
+    font-family: "Fredoka", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    color: white;
+}
+
+#qualifiers, #quaterFinals, #semiFinals, #grandFinals, #mods {
+    display: flex;
+    justify-content: center;
+}
+#modWrapper {
+    display: flex;
+    justify-content: center;
+}
+
+#modWrapper2  {
+    display: flex;
+    justify-content: center;  
+}
+
+.starRating, .stage, .mod{
+    flex: 1; 
+    text-align: center; 
+}
+
+
+#modWrapper2 {
+    background-color: #50a77a;
+    border-top-left-radius: 15px;
+}
+
+
+
+.stage {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 20px;
+}
+#modWrapper {
+    display: flex;
+    justify-content: center;
+    background-color: #387f5f;
+}
+
+#placeholder {
+    background-color: #387f5f;  
+    margin-right: 0;
+    padding-right: 0;
+}
+
+#star {
+    background-color: #50a77a;
+    border-top-left-radius: 15px;
+    padding-left: 0;
+    margin-left: 0;
+}
+
+#nm {
+    background-color: #7cbae5;
+    border-top-left-radius: 15px;
+}
+
+#hd {
+    background-color: #e5cb7c;
+}
+#hr {
+    background-color: #e57c7c;
+}
+
+#dt {
+    background-color: #b07ce5;
+}
+#fm {
+    background-color: #e5b17c;
+}

@@ -1,18 +1,24 @@
 #mappoolListWrapper {
     display: flex;
     justify-content: center;
-    max-height: 750px;
+}
+
+#containerCornerBackground {
+    position: relative;
+    background-color: #01211c;
+    width: 1500px;
+    height: 100px;
+
 }
 
 #mappoolCardContainer {
     background-color: #145f48;
-    border-bottom-right-radius: 20px;
-    border-bottom-left-radius: 20px;
+    border-radius: 3rem;
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 1524.99px;
-    overflow-y: auto;
+    width: 1500px;
+    height: fit-content;
 }
 
 
@@ -20,7 +26,7 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    padding: 15px 0;
+    padding: 15px 15px;
     font-family: "Climate Crisis", sans-serif;
     color: white;
 }
@@ -34,7 +40,7 @@
 .cardWrapper {
     border-radius: 20px;
     background-color: #50a77a;
-    width: 410px;
+    width: 400px;
     height: 175px;
     margin: 10px 15px;
 }
@@ -49,14 +55,12 @@
     width: 315px;
     height: 125px;
     border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
+    object-fit: cover;
 }
 
 #bannerBorder {
     position: absolute;
-    top: 0; left: 0;
-    width: 315px;
-    height: 125px;
+    top: 0; right: 85px;
 }
 
 
@@ -64,46 +68,57 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-
+    text-align: end;
+    max-height: 125px;
+    max-width: 85px;
 }
 
 #mapStats ul {
     list-style: none;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     font-family: "Fredoka", system-ui;
     font-optical-sizing: auto;
     font-weight: 700;
     font-style: normal;
     color: white;
     flex-grow: 1;
-    padding-top: 20px;
-    padding-right: 15px; padding-left: 15px;
+    padding-top: 10px;
     margin-bottom: 0;   
+    max-height: 125px;
+    max-width: 85px;
+    overflow-y: hidden;
 }
 
 #mapStats li {
     display: flex; 
-    align-items: center;
+    justify-content: end;
 }
 #mapStats li img {
-    margin-left: 5px;
+    margin-top: 0.4rem;
+    margin-left: 3px;
+    margin-right: 7px;
+    height: 1.5rem;
+    width: auto;
+}
+
+#mapIDWrapper {
+    position: absolute;
+    top: 0; left: 0;
+    width: 94px;
+    height: 46px;
+    margin-left: 15px;
+    margin-top: 5px; 
+    text-align: center;
 }
 
 #mapIDBackground {
     position: absolute;
     top: 0; left: 0;
-    margin-left: 5px; 
-}
-
-#innerMapIDWrapper {
-    display: flex; 
-    justify-content: center;
 }
 
 #mapID {
-    position: absolute;
-    top: 0; left: 0;
-    padding: 12px 18px;
+    position: relative;
+    top: 12px; left: 0;
     font-family: "Fredoka", system-ui;
     font-optical-sizing: auto;
     font-weight: 700;
@@ -132,13 +147,18 @@
     bottom: 0; left: 0;
     display: flex;
     justify-content: center;
+    height: 50px;
 }
 
 #mod {
+    width: 104px;
+    height: 50px;
     font-size: 2rem;
     color:white;
-    margin-left: 20px;
     z-index: 3;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
 }
 
 #modBackground{
@@ -153,19 +173,21 @@
 #songInfo {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    font-size: 1.185rem;
-    padding-left: 35px;
-    padding-right: 15px;
-    white-space: nowrap;         
-    overflow-x: scroll;            
+    justify-content: space-between;
+    max-height: 50px;
+    padding: 6px;
+    line-height: 1rem;
+    font-size: 1.2rem;
+    white-space: nowrap;
+    overflow: hidden;
+    /*come back to this later to try and fix this, but for now just hide it so it doesn't break on Edge*/
     text-overflow: ellipsis;     
     width: 100%;
 
 }
 
 #artist {
-    font-size: .9rem;
+    font-size: 1rem;
 }
 
 #song {

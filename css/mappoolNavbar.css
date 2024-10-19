@@ -1,7 +1,8 @@
-#mapppoolNavWrapper {
+#mappoolNavWrapper {
     margin-top: 15rem;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
+    width: 100%;
     align-items: center;
 }
 
@@ -11,6 +12,7 @@
     align-items: center;
     background-color: #01211c;
     height: 4rem;
+    width: 1500px;
     border-radius: 3rem 3rem 0 0;
 }
 
@@ -27,15 +29,14 @@
     font-family: "Climate Crisis", sans-serif;
     color: white;
     font-size: 2rem;
-    padding: .68rem 2.2rem;
+    padding: .68rem 1.5rem;
 }
 
 #mappoolLinks li a:hover {
-    background-color: #145f48;
+    background-color: #145f4980;
     border-radius: 3rem 3rem 0 0;
 }
-#mappoolLinks li:first-child a:hover,
-#mappoolLinks li:last-child a:hover {
+
+#mappoolLinks li a:active {
     background-color: #145f48;
-    border-radius: 3rem 3rem 0 0;
-}
+} 

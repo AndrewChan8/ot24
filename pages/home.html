@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Climate+Crisis&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/mainNavbar.css">
+    <link rel="stylesheet" href="../css/mappoolNavbar.css">
+    <link rel="stylesheet" href="../css/mappoolCard.css">
+    <link rel="stylesheet" href="../css/home.css">
+    <title>Home</title>
+    <style>
+      .content-section {
+          display: none; /* Hide all sections by default */
+      }
+      .default { display: block; }
+    </style>
+</head>
+<body>
+    <div id="nav-placeholder"></div>
+    <div id="mappoolNavWrapper">
+      <div id="mappoolNavbarContainer">
+          <nav id="mappoolNavbar">
+              <ul id="mappoolLinks">
+                  <li><a href="#" class="nav-link" data-target="info">Info</a></li>
+                  <li><a href="#" class="nav-link" data-target="rules">Rules</a></li>
+                  <li><a href="#" class="nav-link" data-target="staff">Staff</a></li>
+              </ul>
+          </nav>
+      </div>
+  </div>
+  
+  <div id="mappoolListWrapper">
+    <div id="containerCornerBackground">
+        <div id="mappoolCardContainer">
+            <div id="info" class="content-section default">
+              <div id="wrapper">
+                <div id="infos">
+                  <h1><strong>Lorem ipsum dolor sit</strong></h1>
+                  <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...</h4>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...
+                  </p>
+                </div>
+                <div id="otherInfo">
+                  <button>Registration</button>
+                  <button>Staff Registration</button>
+                  <button>Backup Sheet</button>
+                  <button>More Buttons</button>
+                </div>
+              </div>
+            </div>
+            <div id="rules" class="content-section">
+              <div id="infos">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in nulla id eros ullamcorper scelerisque. Ut eget bibendum ligula. In hac habitasse platea dictumst. Curabitur convallis massa sed nulla vehicula bibendum. Suspendisse potenti. Proin dictum venenatis metus, in auctor nulla ultricies vel. Vivamus eget felis at nulla consectetur fermentum. Integer nec feugiat justo, et eleifend sem. Cras tristique libero id magna pharetra, at facilisis magna consequat. Nam suscipit, mi non vehicula dictum, dui orci ultrices eros, at tempus tortor nulla sit amet ligula.
+
+Sed quis erat nec odio tincidunt fringilla. Fusce tempor tincidunt purus, vel tempor justo efficitur in. Pellentesque facilisis tristique ex, nec auctor justo facilisis non. Vivamus et libero nisi. Nunc vel scelerisque dolor. In in leo vitae turpis fermentum tempor ut eget velit. Quisque malesuada metus et turpis sodales, vel fermentum risus sodales. Ut fringilla mi id arcu dapibus, ut pharetra dolor vestibulum. In pretium, nisl in egestas fermentum, elit mi suscipit enim, non bibendum lorem elit et sem.
+
+Curabitur dapibus vel sapien vel porttitor. Praesent maximus dictum dui sit amet posuere. Suspendisse et ultricies erat. Duis imperdiet accumsan fermentum. Donec id urna nulla. Phasellus sodales consequat orci, vitae scelerisque purus rhoncus eget. Etiam eget quam tincidunt, vehicula lacus vitae, pharetra velit. Ut vitae felis at turpis vulputate pretium nec nec turpis.
+
+                </p>
+            </div>
+          </div>
+    </div>
+</div>
+    <script>
+      $(function(){
+        $("#nav-placeholder").load("../components/navbar.html");
+
+        // Handle click event for navbar links
+        $(".nav-link").click(function(event) {
+          event.preventDefault(); // Prevent default anchor behavior
+          
+          // Hide all content sections
+          $(".content-section").hide();
+          
+          // Show the target section
+          const target = $(this).data("target");
+          $("#" + target).show();
+        });
+      });
+    </script>
+</body>
+</html>
