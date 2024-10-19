@@ -1,7 +1,7 @@
 #wrapper {
     display: flex;
     flex-direction: column; /* Stacks sections vertically */
-    width: 800px;
+    width: 770px;
     background-color: #387f5f;
     font-family: "Fredoka", system-ui;
     font-optical-sizing: auto;
