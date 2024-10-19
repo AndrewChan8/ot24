@@ -12,7 +12,7 @@
 
 #qualifiers, #quaterFinals, #semiFinals, #grandFinals, #mods {
     display: flex;
-    justify-content: center;
+    justify-content: end;
 }
 #modWrapper {
     display: flex;
@@ -33,6 +33,7 @@
 #modWrapper2 {
     background-color: #50a77a;
     border-top-left-radius: 15px;
+    width: 669px;
 }
 
 
@@ -78,4 +79,5 @@
 }
 #fm {
     background-color: #e5b17c;
+   
 }
