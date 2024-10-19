@@ -89,3 +89,12 @@
 #navlinks li a#home:hover::before {
     background-image: url("../assets/images/mainNavbar/statsbg.png");
 }
+
+/* Corrected selector to match your structure */
+#navlinks a#stats.active, #navlinks a#teams.active, #navlinks a#home.active{
+    background-image: url("../assets/images/mainNavbar/statsbg.png");
+}
+
+#navlinks a#mappools.active, #navlinks a#schedule.active {
+    background-image: url("../assets/images/mainNavbar/mappoolsbg.png");
+}
