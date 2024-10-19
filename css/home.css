@@ -46,6 +46,15 @@ button:hover {
     background-color: #67bd90; /* Lighter color on hover */
 }
 
+#infoSectionHeader{
+    font-family: "Climate Crisis", sans-serif;
+    font-size: 3rem;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    margin-top: 0.5em;
+    margin-bottom: 0.25em;
+}
 #mappoolLinks li {
     margin-left: 90px;
     margin-right: 90px;

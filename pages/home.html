@@ -22,8 +22,9 @@
       }
       .default { display: block; }
     </style>
+    <script src="../js/links.js"></script>
 </head>
-<body>
+<body id="home">
     <div id="nav-placeholder"></div>
     <div id="mappoolNavWrapper">
       <div id="mappoolNavbarContainer">
@@ -48,6 +49,8 @@
                   <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...
                   </p>
+                  <h1 id="infoSectionHeader">Mappools</h1>
+                  <div id="mappool-stats"></div>
                 </div>
                 <div id="otherInfo">
                   <button>Registration</button>
@@ -87,6 +90,9 @@ Curabitur dapibus vel sapien vel porttitor. Praesent maximus dictum dui sit amet
           const target = $(this).data("target");
           $("#" + target).show();
         });
+      });
+      $(function(){
+        $("#mappool-stats").load("../components/mappoolStats.html");
       });
     </script>
 </body>

@@ -1,47 +1,65 @@
-#wrapper {
+#mappoolStatsWrapper {
     display: flex;
     flex-direction: column; /* Stacks sections vertically */
-    width: 800px;
+    width: 750px;
     background-color: #387f5f;
     font-family: "Fredoka", system-ui;
     font-optical-sizing: auto;
     font-weight: 700;
     font-style: normal;
     color: white;
+    border-radius: 30px;
 }
 
-#qualifiers, #quaterFinals, #semiFinals, #grandFinals, #mods {
+#qualifiers, #quarterfinals, #semifinals, #finals, #grandfinals, #mods {
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
 }
 #modWrapper {
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
+    border-top-right-radius: 20px;
+    max-height: 48px;
 }
 
 #modWrapper2  {
     display: flex;
-    justify-content: center;  
+    justify-content: flex-end;  
 }
 
-.starRating, .stage, .mod{
+
+.starRating, .mod {
     flex: 1; 
-    text-align: center; 
+    text-align: center;
+    max-height: 48px;
+    font-size: 2em;
+    max-width: 2em;
 }
 
+.mod{
+
+    max-height: 2.5em;
+}
 
 #modWrapper2 {
     background-color: #50a77a;
-    border-top-left-radius: 15px;
-    width: 669px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    max-height: 48px;
+    width: 32em;
+    justify-content: flex-end;
 }
 
 
 
 .stage {
+    flex: 1; 
+    text-align: center; 
+    max-height: 2rem;
     display: flex;
     justify-content: flex-end;
     margin-right: 20px;
+    font-size: 2em;
 }
 #modWrapper {
     display: flex;
@@ -49,35 +67,74 @@
     background-color: #387f5f;
 }
 
-#placeholder {
-    background-color: #387f5f;  
-    margin-right: 0;
-    padding-right: 0;
+.mappoolStatsIcon {
+    width:2.5rem;
+    height:2.5rem;
+    margin-top: -0.4rem;
+}
+.mappoolStatsIconSmall {
+    width:2.2rem;
+    height:2.2rem;
+    margin-top: -0.4rem;
 }
 
-#star {
+.starRatingSmall{
+    font-size: 1.75em;
+    min-width: 4rem;
+    padding-top: 0.20rem;
+}
+.bestOfBG {
+    background-color: #145f48;
+}
+.bansBG {
+    background-color: #196e4f;
+}
+.nmBG{
+    background-color: #5a86a6;
+}
+.hdBG{
+    background-color: #a6935a;
+}
+.hrBG{
+    background-color: #a65a5a;
+}
+.dtBG{
+    background-color: #805aa6;
+}
+.tbBG{
+    background-color: #a6805a;
+}
+.tbBGLast{
+    background-color: #a6805a;
+    border-bottom-right-radius: 20px;
+}
+
+#bestOf {
     background-color: #50a77a;
-    border-top-left-radius: 15px;
+    border-top-left-radius: 20px;
     padding-left: 0;
     margin-left: 0;
 }
-
-#nm {
-    background-color: #7cbae5;
-    border-top-left-radius: 15px;
+#bans {
+    background-color: #67bd90;
 }
-
-#hd {
+#star {
+    background-color: #50a77a;
+}
+#nmStats {
+    background-color: #7cbae5;
+}
+#hdStats {
     background-color: #e5cb7c;
 }
-#hr {
+#hrStats {
     background-color: #e57c7c;
 }
 
-#dt {
+#dtStats {
     background-color: #b07ce5;
 }
-#fm {
+#tbStats {
     background-color: #e5b17c;
-   
+    border-top-right-radius: 20px;
 }
