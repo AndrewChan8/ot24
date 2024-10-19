@@ -1,12 +1,13 @@
 #wrapper {
     display: flex;
     justify-content: space-between; /* Space between columns */
-    padding: 20px; /* Padding around the wrapper */
+    padding: 20px 40px; /* Padding around the wrapper */
+    width: 1500px;
 }
 
 #infos, #otherInfo {
-    flex: 1; /* Equal width for both columns */
-    margin: 0 10px; /* Add horizontal margin between columns */
+    flex: 2; /* Equal width for both columns */
+    margin: 0 30px; /* Add horizontal margin between columns */
     padding: 20px; /* Add padding inside the columns for better spacing */
 }
 
@@ -14,6 +15,7 @@
     display: flex; /* Use flexbox for buttons */
     flex-direction: column; /* Stack buttons vertically */
     gap: 40px; /* Add gap between buttons */
+    max-width: 550px;
 }
 
 #infos {
@@ -26,13 +28,14 @@
 
 #infos {
     font-weight: 100;
+
 }
 button {
     padding: 20px;
-    background-color: #67bd90; 
+    background-color: #50a77a; 
     color: white; 
     border: none; 
-    border-radius: 20px; 
+    border-radius: 30px; 
     cursor: pointer;
     font-family: "Climate Crisis", sans-serif;
     color: white;
@@ -40,7 +43,7 @@ button {
 }
 
 button:hover {
-    background-color: #0056b3; /* Darker color on hover */
+    background-color: #67bd90; /* Lighter color on hover */
 }
 
 #mappoolLinks li {
