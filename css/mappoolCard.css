@@ -12,8 +12,9 @@
     flex-direction: column;
     align-items: center;
     width: 1524.99px;
-    overflow-y: scroll;
+    overflow-y: auto;
 }
+
 
 #nm, #hd, #hr, #dt, #fm, #tb {
     display: flex;
