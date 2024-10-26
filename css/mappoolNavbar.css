@@ -30,11 +30,11 @@
     color: white;
     font-size: 2rem;
     padding: .68rem 1.5rem;
+    border-radius: 3rem 3rem 0 0;
 }
 
 #mappoolLinks li a:hover {
     background-color: #145f4980;
-    border-radius: 3rem 3rem 0 0;
 }
 
 #mappoolLinks li a:active {
