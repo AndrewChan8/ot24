@@ -1,7 +1,7 @@
 Hard Deadlines (EOD):
 General site readiness (text for unreleased pools, navbar final version, browser compatibility, hover text, etc) - November 1st
 Home page final version - November 1st
-Mappool page final version - November 8th
+Mappool page final version - November 4th **UPDATED**
 Teams page final version - November 16th
 Schedules page final version - November 16th
 Stats page final version - November 16th
@@ -14,13 +14,14 @@ Home page update - October 20th
 Site update - October 20th
     Set up navbars to highlight current page ✔️
 Home page final version - October 27th
-    Add info
-    Add rules
-    Add button links
+    Add info ✔️
+    Add rules ✔️
+    Add button links ✔️
 Mappool page final version - October 27th
     Add custom map badge
     Add hover interactions
-    Add text for unreleased pools
+    Add text auto-scaling for title and artist (I found some resources for this if you want)
+    Remove placeholder pools
 Teams page final version - November 3rd
     Convert mappool card to teams card
 Schedules page final version - November 3rd
