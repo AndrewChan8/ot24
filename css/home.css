@@ -1,24 +1,30 @@
 #wrapper {
     display: flex;
     justify-content: space-between; /* Space between columns */
-    padding: 20px 40px; /* Padding around the wrapper */
+    padding: 20px 50px; /* Padding around the wrapper */
     width: 1500px;
 }
 
 #infos, #otherInfo {
     flex: 2; /* Equal width for both columns */
-    margin: 0 30px; /* Add horizontal margin between columns */
+    margin: 0 20px; /* Add horizontal margin between columns */
     padding: 20px; /* Add padding inside the columns for better spacing */
+    max-width: 1250px; 
 }
 
-#otherInfo {
+#otherInfo, #buttonsColumn {
     display: flex; /* Use flexbox for buttons */
     flex-direction: column; /* Stack buttons vertically */
     gap: 40px; /* Add gap between buttons */
     max-width: 550px;
 }
 
-#infos {
+#otherInfo a {
+    color:white;
+    text-decoration: none;
+}
+
+#infos, #otherInfo {
     font-family: "Fredoka", system-ui;
     font-optical-sizing: auto;
     font-weight: 700;
@@ -26,10 +32,17 @@
     color: white;
 }
 
-#infos {
-    font-weight: 100;
-
+#infos ul, #otherInfo ul {
+    list-style: disc;
 }
+
+#infos ol, #otherInfo ol {
+    list-style: none;
+}
+#infos li, #otherInfo li {
+    margin-top: 0.2rem;
+}
+
 button {
     padding: 20px;
     background-color: #50a77a; 
@@ -46,15 +59,52 @@ button:hover {
     background-color: #67bd90; /* Lighter color on hover */
 }
 
-#infoSectionHeader{
+#infoSectionHeader, #rulesSectionHeader, #initialSectionHeader {
     font-family: "Climate Crisis", sans-serif;
     font-size: 3rem;
     color: white;
     text-decoration: none;
-    text-align: center;
-    margin-top: 0.5em;
     margin-bottom: 0.25em;
 }
+
+#infoSectionHeader {
+    margin-top: 0.75em;
+    text-align: center;
+}
+
+#rulesSectionHeader {
+    margin-top: 0.75em;
+}
+
+#initialSectionHeader {
+    margin-top: 0em;
+}
+
+.sectionHeaderCenter {
+    text-align: center;
+}
+
+#infoListBody {
+    font-weight: 400;
+    font-size: 1.1em;
+}
+
+#staffNames {
+    padding: 12px 20px;
+    margin: auto;
+    background-color: #50a77a; 
+    color: white; 
+    border: none; 
+    border-radius: 30px; 
+    cursor: pointer;
+    font-family: "Climate Crisis", sans-serif;
+    line-height: 1.5em;
+    color: white;
+    font-size: 2em;
+    text-align: center;
+    max-width: fit-content;
+}
+
 #mappoolLinks li {
     margin-left: 90px;
     margin-right: 90px;
