@@ -10,3 +10,17 @@ for (let link of links) {
         link.classList.add("active"); // Add the active class to the matching link
     }
 }
+
+
+document.querySelectorAll("#mappoolLinks .nav-link").forEach(link => {
+    link.addEventListener("click", function() {
+        // Remove 'active' class from any currently active link
+        document.querySelector("#mappoolLinks .nav-link.active")?.classList.remove("active");
+
+        // Add 'active' class to the clicked link
+        link.classList.add("active");
+    });
+});
+
+
+console.log(mappoolLinks)
