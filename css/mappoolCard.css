@@ -193,3 +193,11 @@
 #song {
     margin-right: 15px;
 }
+
+.coming-soon {
+    font-size: 100px;
+    color: white;
+    font-family: "Climate Crisis", sans-serif;
+    padding: 15px 20px;
+    display: none;
+}

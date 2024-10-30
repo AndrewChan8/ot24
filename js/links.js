@@ -1,7 +1,5 @@
 // Correct selector to target all anchor tags within the #navlinks element
 let links = document.querySelectorAll("#navlinks a");
-console.log(links); // Logs the NodeList of all <a> elements inside #navlinks
-
 let bodyId = document.querySelector("body").id; // Get the ID of the <body>
 
 // Loop through each link and check if its data-active attribute matches the body ID
@@ -22,5 +20,5 @@ document.querySelectorAll("#mappoolLinks .nav-link").forEach(link => {
     });
 });
 
-
-console.log(mappoolLinks)
+let tests=document.querySelectorAll("#mappoolLinks .nav-link");
+console.log(tests);
