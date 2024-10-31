@@ -201,3 +201,17 @@
     padding: 15px 20px;
     display: none;
 }
+
+#diffLevel {
+    display: none;
+}
+
+#mapInfo:hover #songInfo {
+    display: none;
+}
+
+#mapInfo:hover #diffLevel {
+    display: block;
+}
+
+

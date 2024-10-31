@@ -86,20 +86,26 @@ function loadMappoolData(activeTab) {
                         <div id="modWrapper">
                             <span id="mod">${maps}</span>
                             <img id="modBackground" src="../assets/images/mappoolCard/modBackground${mod.toUpperCase()}.png" alt="Mod Background">
+                        </div>
+                            <div id="mapInfo">
+                                <div id="songInfo">
+                                    <span id="song">${map.title}</span>
+                                    <span id="artist">${map.artist}</span>
+                                </div>
+                                <div id="diffLevel">
+                                    <span id="song">${map.version}</span>
+                                    <span id="artist">${map.mapper}</span>
+                                </div>
                             </div>
-                            <div id="songInfo">
-                            <span id="song">${map.title}</span>
-                            <span id="artist">${map.artist}</span>
-                            </div>
-                            </div>
+                        </div>
                             `;                
-                console.log(modMapping)
+                // console.log(modMapping)
                 if (modMapping[mod]) {
-                    console.log("++++++++++++++++")
+                    // console.log("++++++++++++++++")
                     modMapping[mod].appendChild(cardWrapper);
-                    console.log(`Appended ${mod} map: ${map.title}`);
+                    // console.log(`Appended ${mod} map: ${map.title}`);
                 } else {
-                    console.warn(`No mapping for mod: ${mod} - cannot append map: ${map.title}`);
+                    // console.warn(`No mapping for mod: ${mod} - cannot append map: ${map.title}`);
                 }
             }
         })
