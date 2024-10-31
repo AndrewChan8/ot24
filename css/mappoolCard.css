@@ -170,7 +170,11 @@
     border-bottom-left-radius: 20px;
 }
 
-#songInfo {
+#mapInfo {
+    position: relative;
+}
+
+#songInfo, #diffLevel{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -181,9 +185,9 @@
     white-space: nowrap;
     overflow: hidden;
     /*come back to this later to try and fix this, but for now just hide it so it doesn't break on Edge*/
-    text-overflow: ellipsis;     
-    width: 100%;
-
+    transition: opacity 0.3s ease;
+    position: absolute;
+    visibility: visible;
 }
 
 #artist {
@@ -202,16 +206,21 @@
     display: none;
 }
 
+
+#songInfo {
+    opacity: 1;
+}
+
 #diffLevel {
-    display: none;
+    opacity: 0;
+    pointer-events: none; /* Prevent interactions when hidden */
 }
 
 #mapInfo:hover #songInfo {
-    display: none;
+    opacity: 0;
 }
 
 #mapInfo:hover #diffLevel {
-    display: block;
+    opacity: 1;
+    pointer-events: auto; /* Enable interactions when visible */
 }
-
-
