@@ -43,6 +43,7 @@
     width: 400px;
     height: 175px;
     margin: 10px 15px;
+    position: relative;
 }
 
 #mappoolCardTop {
@@ -61,6 +62,7 @@
 #bannerBorder {
     position: absolute;
     top: 0; right: 85px;
+    z-index: 5;
 }
 
 
@@ -174,22 +176,6 @@
     position: relative;
 }
 
-#songInfo, #diffLevel{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    max-height: 50px;
-    padding: 6px;
-    line-height: 1rem;
-    font-size: 1.2rem;
-    white-space: nowrap;
-    overflow: hidden;
-    /*come back to this later to try and fix this, but for now just hide it so it doesn't break on Edge*/
-    transition: opacity 0.3s ease;
-    position: absolute;
-    visibility: visible;
-}
-
 #artist {
     font-size: 1rem;
 }
@@ -206,6 +192,21 @@
     display: none;
 }
 
+#songInfo, #diffLevel{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-height: 50px;
+    padding: 6px;
+    line-height: 1rem;
+    font-size: 1.2rem;
+    white-space: nowrap;
+    overflow: hidden;
+    /*come back to this later to try and fix this, but for now just hide it so it doesn't break on Edge*/
+    transition: opacity 0.3s ease;
+    position: absolute;
+    visibility: visible;
+}
 
 #songInfo {
     opacity: 1;
@@ -220,7 +221,58 @@
     opacity: 0;
 }
 
-#mapInfo:hover #diffLevel {
+#mapInfo:hover #diffLevel, #mapCreator:hover #difficulty   {
     opacity: 1;
     pointer-events: auto; /* Enable interactions when visible */
+}
+
+
+#difficulty {
+    display: flex; 
+    justify-content: center; 
+    position: absolute; 
+    font-family: "Fredoka", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 18px;
+    bottom: 55px;
+    left: 120px;
+    opacity : 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+}
+
+#cs, #od, #ar {
+    z-index: 4; 
+    position: relative; 
+    color: white; 
+    text-align: center;
+    margin-right: 7px;
+    margin-bottom: 1px;
+    margin-left: .5px;
+}
+
+#cs p, #od p, #ar p {
+    margin-bottom: 5px;
+}
+
+#mapStatHover {
+    position: absolute;
+    z-index: 4;
+    bottom: -5px;
+    left: -25px;
+    width: 220px;
+}
+
+#customWrapper {
+    position: absolute;
+    border: 15px solid black;
+    z-index: 4;
+}
+
+#customBackground, #customIcon {
+    width: 15px;
+    height: 10px;
+    position: absolute;
 }

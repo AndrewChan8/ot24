@@ -64,41 +64,61 @@ function loadMappoolData(activeTab) {
                 console.log(mod);    
                 const cardWrapper = document.createElement('div');
                 cardWrapper.classList.add("cardWrapper");
+                let starRating = map.star_rating;
                 cardWrapper.innerHTML = `
                 <div id="mappoolCardTop">
-                        <div id="mapBannerWrapper">
-                            <img id="banner" src="../assets/images/mappoolCard/mappoolBanner.png" alt="${map.title} Banner">
-                            <img id="bannerBorder" src="../assets/images/mappoolCard/bannerBorder.png" alt="Banner Border">
-                            <div id="mapIDWrapper">
-                                <span id="mapID">${map.beatmap_id}</span>
-                                <img id="mapIDBackground" src="../assets/images/mappoolCard/mapID.png" alt="Map ID Background">
-                                </div>
-                        </div>
-                        <div id="mapStats">
-                            <ul>
-                            <li>${map.star_rating}<img class="mapIcon" src="../assets/images/mappoolCard/star.svg" alt="Star Icon"></li> 
-                            <li>${map.bpm}<img class="mapIcon" src="../assets/images/mappoolCard/speed.svg" alt="Speed Icon"></li>
+                    <div id="mapBannerWrapper">
+                        <img id="banner" src="../assets/images/mappoolCard/mappoolBanner.png" alt="${map.title} Banner">
+                        <img id="bannerBorder" src="../assets/images/mappoolCard/bannerBorder.png" alt="Banner Border">
+                        <div id="mapIDWrapper">
+                            <span id="mapID">${map.beatmap_id}</span>
+                            <img id="mapIDBackground" src="../assets/images/mappoolCard/mapID.png" alt="Map ID Background">
+                            </div>
+                    </div>
+                    <div id="mapStats">
+                        <ul>
+                            <li>${parseFloat(starRating).toFixed(2)}<img class="mapIcon" src="../assets/images/mappoolCard/star.svg" alt="Star Icon"></li> 
+                            <li>${Math.round(map.bpm)}<img class="mapIcon" src="../assets/images/mappoolCard/speed.svg" alt="Speed Icon"></li>
                             <li>${map.length}<img class="mapIcon" src="../assets/images/mappoolCard/timelapse.svg" alt="Time Icon"></li>
-                            </ul>
+                        </ul>
+                    </div>
+                </div>
+                <div id="mapStatsWrapper">
+                    <div id="mapCreator">
+                        <div id="customWrapper">
+                            <img id="customBackground" src="../assets/images/mappoolCard/customMapBackground.png">
+                            <img id="customIcon" src="../assets/images/mappoolCard/customMapIcon.png">
                         </div>
-                        </div>
-                        <div id="mapCreator">
+
                         <div id="modWrapper">
                             <span id="mod">${maps}</span>
                             <img id="modBackground" src="../assets/images/mappoolCard/modBackground${mod.toUpperCase()}.png" alt="Mod Background">
                         </div>
-                            <div id="mapInfo">
-                                <div id="songInfo">
-                                    <span id="song">${map.title}</span>
-                                    <span id="artist">${map.artist}</span>
-                                </div>
-                                <div id="diffLevel">
-                                    <span id="song">${map.version}</span>
-                                    <span id="artist">${map.mapper}</span>
-                                </div>
+                        <div id="mapInfo">
+                            <div id="songInfo">
+                                <span id="song">${map.title}</span>
+                                <span id="artist">${map.artist}</span>
+                            </div>
+                            <div id="diffLevel">
+                                <span id="song">${map.version}</span>
+                                <span id="artist">${map.mapper}</span>
                             </div>
                         </div>
-                            `;                
+                        <div id="difficulty">
+                            <img id="mapStatHover" src="../assets/images/mappoolCard/mapStatsHover.png">
+                            <div id="cs">
+                                <p>CS ${map.cs}</p>
+                            </div>
+                            <div id="od">
+                                <p>OD ${map.od}</p>
+                            </div>
+                            <div id="ar">
+                                <p>AR ${map.ar}</p>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+                `;                
                 // console.log(modMapping)
                 if (modMapping[mod]) {
                     // console.log("++++++++++++++++")
