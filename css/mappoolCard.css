@@ -272,7 +272,19 @@
 }
 
 #customBackground, #customIcon {
-    width: 15px;
-    height: 10px;
     position: absolute;
+    bottom: 100px;
+}
+#customBackground{
+    width: 115px;
+    height: 50px;
+    left: 187px;
+    top: -139px;
+}
+
+#customIcon {
+    width: 50px;
+    height: 35px;
+    left: 220px;
+    top: -135px;
 }
