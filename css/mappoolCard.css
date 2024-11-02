@@ -267,24 +267,24 @@
 
 #customWrapper {
     position: absolute;
-    border: 15px solid black;
     z-index: 4;
 }
+
 
 #customBackground, #customIcon {
     position: absolute;
     bottom: 100px;
 }
 #customBackground{
-    width: 115px;
+    width: 100px;
     height: 50px;
-    left: 187px;
-    top: -139px;
+    left: 215px;
+    top: -125px;
 }
 
 #customIcon {
     width: 50px;
     height: 35px;
-    left: 220px;
-    top: -135px;
+    left: 240px;
+    top: -120px;
 }
