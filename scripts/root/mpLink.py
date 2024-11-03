@@ -82,11 +82,11 @@ if __name__ == "__main__":
   for link in mpLinks:
     beatmaps, results = getMpData(link)
 
-    if not os.path.exists('mpResults/qf.json'):
-      with open('mpResults/qf.json', 'w') as file:
+    if not os.path.exists('../mpResults/qf.json'):
+      with open('../mpResults/qf.json', 'w') as file:
         json.dump({}, file)
 
-    with open('mpResults/qf.json', 'r') as file:
+    with open('../mpResults/qf.json', 'r') as file:
       try:
         data = json.load(file)
       except json.JSONDecodeError:
@@ -100,5 +100,5 @@ if __name__ == "__main__":
       data[result]['mpLink'] = int(link)
 
     # Write the updated data back to the file
-    with open('mpResults/qf.json', 'w') as file:
+    with open('../mpResults/qf.json', 'w') as file:
       json.dump(data, file, indent=4)

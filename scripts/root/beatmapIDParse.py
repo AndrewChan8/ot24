@@ -52,6 +52,10 @@ def getBeatmapData(beatmapID, mod):
   sr = float(beatmap["difficultyrating"])
   bpm = float(beatmap["bpm"])
   length = float(beatmap["hit_length"])
+  coverImageLink = f"https://assets.ppy.sh/beatmaps/{setID}/covers/cover.jpg"
+  coverThumbnailLink = f"https://b.ppy.sh/thumb/{setID}l.jpg"
+
+
 
   cs = float(beatmap["diff_size"])
   od = float(beatmap["diff_overall"])
@@ -85,6 +89,8 @@ def getBeatmapData(beatmapID, mod):
   beatmapData["cs"] = f"{round(cs, 1)}"
   beatmapData["ar"] = f"{round(ar, 1)}"
   beatmapData["od"] = f"{round(od, 1)}"
+  beatmapData["image"] = f"{coverImageLink}"
+  beatmapData["thumbnail"] = f"{coverThumbnailLink}"
 
   return beatmapData
 
@@ -130,6 +136,6 @@ if __name__ == "__main__":
 
   name = input("Enter mappool name:")
 
-  with open(f"mappools/{name}.json", "w") as outfile:
+  with open(f"../mappools/{name}.json", "w") as outfile:
     json.dump(mappool, outfile, indent=4)
 
