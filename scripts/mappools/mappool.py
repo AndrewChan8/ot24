@@ -1,7 +1,9 @@
 import json
 import os
 
-with open('qualifiers.json', 'r') as file:
+name = input("Enter mappool name:")
+
+with open(f'{name}.json', 'r') as file:
   data = json.load(file)
 
 for map in data:
