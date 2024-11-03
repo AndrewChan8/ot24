@@ -62,6 +62,7 @@
 #bannerBorder {
     position: absolute;
     top: 0; right: 85px;
+    object-fit: contain;
     z-index: 5;
 }
 

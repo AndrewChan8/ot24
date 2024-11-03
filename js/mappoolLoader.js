@@ -27,15 +27,17 @@ function loadMappoolData(activeTab) {
             for(const maps in mappool) {
                 let map = mappool[maps];
                 let mod = maps.slice(0, 2);
-
+                console.log(map.beatmap_link);
                 const cardWrapper = document.createElement('div');
                 cardWrapper.classList.add("cardWrapper");
                 let starRating = map.star_rating;
                 cardWrapper.innerHTML = `
                     <div id="mappoolCardTop">
                         <div id="mapBannerWrapper">
-                            <img id="banner" src="${map.image}" alt="${map.title} Banner">
-                            <img id="bannerBorder" src="../assets/images/mappoolCard/bannerBorder.png" alt="Banner Border">
+                            <a href="${map.beatmap_link}" target="_blank" rel="noopener noreferrer">
+                                <img id="banner" src="${map.image}" alt="${map.title} Banner">
+                                <img id="bannerBorder" src="../assets/images/mappoolCard/bannerBorder.png" alt="Banner Border">
+                            </a>
                             <div id="mapIDWrapper">
                                 <span class="mapID" data-beatmap-id="${map.beatmap_id}" onclick="copyToClipboard(this)">${map.beatmap_id}</span>
                                 <img id="mapIDBackground" src="../assets/images/mappoolCard/mapID.png" alt="Map ID Background">
