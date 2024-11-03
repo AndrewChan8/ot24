@@ -66,8 +66,8 @@ function loadMappoolData(activeTab) {
                                 <span id="artist">${map.artist}</span>
                             </div>
                             <div id="diffLevel">
-                                <span id="song">${map.version}</span>
-                                <span id="artist">${map.mapper}</span>
+                                <span id="song">[${map.version}]</span>
+                                <span id="artist">Mapset by ${map.mapper}</span>
                             </div>
                         </div>
                     </div>
