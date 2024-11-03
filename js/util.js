@@ -1,4 +1,8 @@
 function copyToClipboard(element) {
+    /*
+        Use : Copy beatmap ID to clip board based on clicked element
+        using keyword this.
+    */
     const text = element.getAttribute('data-beatmap-id');
     const textarea = document.createElement('textarea');
     textarea.value = text;

@@ -223,13 +223,14 @@
     pointer-events: none; /* Prevent interactions when hidden */
 }
 
-#mapInfo:hover #songInfo {
+.cardWrapper:hover #songInfo {
     opacity: 0;
 }
 
-#mapInfo:hover #diffLevel, #mapCreator:hover #difficulty   {
+.cardWrapper:hover #diffLevel, .cardWrapper:hover #difficulty   {
     opacity: 1;
     pointer-events: auto; /* Enable interactions when visible */
+    transition: opacity 0.3s ease;
 }
 
 

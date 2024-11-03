@@ -34,7 +34,7 @@ function loadMappoolData(activeTab) {
                 cardWrapper.innerHTML = `
                     <div id="mappoolCardTop">
                         <div id="mapBannerWrapper">
-                            <img id="banner" src="../assets/images/mappoolCard/mappoolBanner.png" alt="${map.title} Banner">
+                            <img id="banner" src="${map.image}" alt="${map.title} Banner">
                             <img id="bannerBorder" src="../assets/images/mappoolCard/bannerBorder.png" alt="Banner Border">
                             <div id="mapIDWrapper">
                                 <span class="mapID" data-beatmap-id="${map.beatmap_id}" onclick="copyToClipboard(this)">${map.beatmap_id}</span>
@@ -49,34 +49,33 @@ function loadMappoolData(activeTab) {
                             </ul>
                         </div>
                     </div>
-                    <div id="mapStatsWrapper">
-                        <div id="mapCreator">
-                            <div id="customWrapper">
-                                <img id="customBackground" src="../assets/images/mappoolCard/customMapBackground.png">
-                                <img id="customIcon" src="../assets/images/mappoolCard/customMapIcon.png">
+                    <div id="mapCreator">
+                        <div id="customWrapper">
+                            <img id="customBackground" src="../assets/images/mappoolCard/customMapBackground.png">
+                            <img id="customIcon" src="../assets/images/mappoolCard/customMapIcon.png">
+                        </div>
+                        <div id="modWrapper">
+                            <span id="mod">${maps}</span>
+                            <img id="modBackground" src="../assets/images/mappoolCard/modBackground${mod.toUpperCase()}.png" alt="Mod Background">
+                        </div>
+                        <div id="mapInfo">
+                            <div id="songInfo">
+                                <span id="song">${map.title}</span>
+                                <span id="artist">${map.artist}</span>
                             </div>
-                            <div id="modWrapper">
-                                <span id="mod">${maps}</span>
-                                <img id="modBackground" src="../assets/images/mappoolCard/modBackground${mod.toUpperCase()}.png" alt="Mod Background">
+                            <div id="diffLevel">
+                                <span id="song">${map.version}</span>
+                                <span id="artist">${map.mapper}</span>
                             </div>
-                            <div id="mapInfo">
-                                <div id="songInfo">
-                                    <span id="song">${map.title}</span>
-                                    <span id="artist">${map.artist}</span>
-                                </div>
-                                <div id="diffLevel">
-                                    <span id="song">${map.version}</span>
-                                    <span id="artist">${map.mapper}</span>
-                                </div>
-                            </div>
-                            <div id="difficulty">
-                                <img id="mapStatHover" src="../assets/images/mappoolCard/mapStatsHover.png">
-                                <div id="cs"><p>CS ${map.cs}</p></div>
-                                <div id="od"><p>OD ${map.od}</p></div>
-                                <div id="ar"><p>AR ${map.ar}</p></div>
-                            </div>
-                        </div> 
-                    </div>`;
+                        </div>
+                    </div>
+                    <div id="difficulty">
+                        <img id="mapStatHover" src="../assets/images/mappoolCard/mapStatsHover.png">
+                        <div id="cs"><p>CS ${map.cs}</p></div>
+                        <div id="od"><p>OD ${map.od}</p></div>
+                        <div id="ar"><p>AR ${map.ar}</p></div>
+                    </div>
+                    `;
                 
                 if (modMapping[mod]) {
                     modMapping[mod].appendChild(cardWrapper);
