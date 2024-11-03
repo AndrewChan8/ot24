@@ -282,18 +282,17 @@
     position: absolute;
     bottom: 100px;
 }
+
 #customBackground{
-    width: 100px;
-    height: 50px;
-    left: 215px;
+    left: 229px;
     top: -125px;
 }
 
 #customIcon {
     width: 50px;
     height: 35px;
-    left: 240px;
-    top: -120px;
+    left: 248px;
+    top: -121px;
 }
 
 .mapID:hover {
