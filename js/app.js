@@ -23,6 +23,36 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 
+
+function copyToClipboard(element) {
+    // Get the beatmap ID from the clicked element's data attribute
+    const text = element.getAttribute('data-beatmap-id');
+    
+    // Create a temporary textarea element to hold the text
+    const textarea = document.createElement('textarea');
+    textarea.value = text;
+    document.body.appendChild(textarea);
+    
+
+    textarea.select();
+    textarea.setSelectionRange(0, 99999); 
+
+    // Copy the text to the clipboard
+    document.execCommand('copy');
+
+ 
+    document.body.removeChild(textarea);
+
+    element.textContent = "Copied!";
+    element.classList.add('copied'); // Add animation class
+
+    // Set a timeout to switch back to the original beatmap ID
+    setTimeout(() => {
+        element.textContent = text; 
+        element.classList.remove('copied'); 
+    }, 800); 
+}
+
 function loadMappoolData(activeTab) {
     const mappoolContainer = document.querySelector(".modTitle");
     const comingSoon = document.querySelector(".coming-soon");
@@ -71,7 +101,7 @@ function loadMappoolData(activeTab) {
                         <img id="banner" src="../assets/images/mappoolCard/mappoolBanner.png" alt="${map.title} Banner">
                         <img id="bannerBorder" src="../assets/images/mappoolCard/bannerBorder.png" alt="Banner Border">
                         <div id="mapIDWrapper">
-                            <span id="mapID">${map.beatmap_id}</span>
+                            <span class="mapID" data-beatmap-id="${map.beatmap_id}" onclick="copyToClipboard(this)">${map.beatmap_id}</span>
                             <img id="mapIDBackground" src="../assets/images/mappoolCard/mapID.png" alt="Map ID Background">
                             </div>
                     </div>
