@@ -52,10 +52,6 @@ function loadMappoolData(activeTab) {
                         </div>
                     </div>
                     <div id="mapCreator">
-                        <div id="customWrapper">
-                            <img id="customBackground" src="../assets/images/mappoolCard/customMapBackground.png">
-                            <img id="customIcon" src="../assets/images/mappoolCard/customMapIcon.png">
-                        </div>
                         <div id="modWrapper">
                             <span id="mod">${maps}</span>
                             <img id="modBackground" src="../assets/images/mappoolCard/modBackground${mod.toUpperCase()}.png" alt="Mod Background">
@@ -88,3 +84,11 @@ function loadMappoolData(activeTab) {
             console.error("Error Fetching JSON:", error);
         });
 }
+
+/*
+
+<div id="customWrapper">
+    <img id="customBackground" src="../assets/images/mappoolCard/customMapBackground.png">
+    <img id="customIcon" src="../assets/images/mappoolCard/customMapIcon.png">
+</div>
+*/
