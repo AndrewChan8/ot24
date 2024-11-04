@@ -18,21 +18,16 @@ def getMpData(mpLink):
   usernames = []
   matchScores = {}
   beatmaps = [
-"Happy End no Intro ga Kikoeru",
-"Monosugoi Ikioi de Keine ga Monosugoi Uta",
-"God-ish",
-"Cybernetics",
-"The Real Disappearance of Hatsune Miku",
-"Charisma Rengoku Tenshin",
-"Chousai Kenbo Sengen",
-"Siren",
-"Captain Murasa's Ass Anchor",
-"Ikanaide",
-"Grenade",
-"Ditto",
-"FREEDMAN",
-"Clumsy thoughts",
-"Rising Hope (LU-I Remix)"
+"Sekai ga Katachi Nakushitemo",
+"Crystallite Dream",
+"Karada wa Shoujiki datte Ittenno",
+"RAMSING",
+"Apollo 69",
+"BREAK LAW",
+"Hana ni Natte",
+"Hestia",
+"Kokoronashi",
+"Furin Kagerou"
 ]
 
   for eachMap in match:
@@ -72,9 +67,6 @@ def promptLinks():
 
 if __name__ == "__main__":
   mpLinks = [
-111457578,
-111470883,
-111458194
   ]
 
   # mpLinks = promptLinks()
