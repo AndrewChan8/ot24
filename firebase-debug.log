@@ -1,0 +1,16 @@
+[debug] [2024-11-04T05:48:44.850Z] ----------------------------------------------------------------------
+[debug] [2024-11-04T05:48:44.852Z] Command:       /usr/bin/node /usr/local/bin/firebase deploy
+[debug] [2024-11-04T05:48:44.852Z] CLI Version:   13.23.1
+[debug] [2024-11-04T05:48:44.852Z] Platform:      linux
+[debug] [2024-11-04T05:48:44.852Z] Node Version:  v18.19.0
+[debug] [2024-11-04T05:48:44.853Z] Time:          Sun Nov 03 2024 21:48:44 GMT-0800 (Pacific Standard Time)
+[debug] [2024-11-04T05:48:44.853Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-11-04T05:48:44.889Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-11-04T05:48:44.889Z] > authorizing via signed-in user (tts.sophie88@gmail.com)
+[debug] [2024-11-04T05:48:44.889Z] [iam] checking project ot24-af207 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2024-11-04T05:48:44.890Z] Checked if tokens are valid: false, expires at: 1730693898884
+[debug] [2024-11-04T05:48:44.890Z] Checked if tokens are valid: false, expires at: 1730693898884
+[debug] [2024-11-04T05:48:44.891Z] > refreshing access token with scopes: []
+[debug] [2024-11-04T05:48:44.892Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2024-11-04T05:48:44.892Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
