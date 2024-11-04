@@ -43,21 +43,6 @@
     margin-top: 0.2rem;
 }
 
-button {
-    padding: 20px;
-    background-color: #50a77a; 
-    color: white; 
-    border: none; 
-    border-radius: 30px; 
-    cursor: pointer;
-    font-family: "Climate Crisis", sans-serif;
-    color: white;
-    font-size: 2rem;
-}
-
-button:hover {
-    background-color: #67bd90; /* Lighter color on hover */
-}
 
 #infoSectionHeader, #rulesSectionHeader, #initialSectionHeader {
     font-family: "Climate Crisis", sans-serif;
