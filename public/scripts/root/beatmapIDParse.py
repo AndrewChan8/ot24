@@ -109,12 +109,12 @@ if __name__ == "__main__":
   ]
 
   mods = {
-    "nm": 5,
+    "nm": 4,
     "hd": 2,
     "hr": 2,
-    "dt": 3,
-    "fm": 2,
-    "tb": 1
+    "dt": 2,
+    "fm": 0,
+    "tb": 0
   }
 
   modList = [f"{key}{i+1}" for key, count in mods.items() for i in range(count)]
