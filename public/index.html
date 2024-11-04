@@ -10,11 +10,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Climate+Crisis&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
-    <link rel="stylesheet" href="../css/main.css">
-    <link rel="stylesheet" href="../css/mainNavbar.css">
-    <link rel="stylesheet" href="../css/mappoolNavbar.css">
-    <link rel="stylesheet" href="../css/mappoolCard.css">
-    <link rel="stylesheet" href="../css/home.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/mainNavbar.css">
+    <link rel="stylesheet" href="css/mappoolNavbar.css">
+    <link rel="stylesheet" href="css/mappoolCard.css">
+    <link rel="stylesheet" href="css/home.css">
     <title>Home</title>
     <style>
       .content-section {
@@ -22,7 +22,7 @@
       }
       .default { display: block; }
     </style>
-    <script src="../js/links.js"></script>
+    <script src="js/links.js"></script>
 </head>
 <body id="home">
     <div id="nav-placeholder"></div>
@@ -223,7 +223,7 @@
 </div>
     <script>
       $(function(){
-        $("#nav-placeholder").load("../components/navbar.html");
+        $("#nav-placeholder").load("components/navbar.html");
 
         // Handle click event for navbar links
         $(".nav-link").click(function(event) {
@@ -238,12 +238,12 @@
         });
       });
       $(function(){
-        $("#mappool-stats").load("../components/mappoolStats.html");
+        $("#mappool-stats").load("components/mappoolStats.html");
       });
     </script>
-    <script src="../js/init.js"></script>
-    <script src="../js/mappoolLoader.js"></script>
-    <script src="../js/util.js"></script>
+    <script src="js/init.js"></script>
+    <script src="js/mappoolLoader.js"></script>
+    <script src="js/util.js"></script>
     
 </body>
 </html>
