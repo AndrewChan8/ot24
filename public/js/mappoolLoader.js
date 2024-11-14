@@ -1,9 +1,28 @@
+document.addEventListener("DOMContentLoaded", function() {
+    const defaultTab = "qualifiers";
+    loadMappoolData(defaultTab);
+
+    const tabs = document.querySelectorAll('.nav-link');
+    tabs.forEach(tab => {
+        tab.addEventListener("click", function(event) {
+            event.preventDefault();
+            const activeTab = tab.getAttribute("data-active");
+            if (tab.classList.contains("active")) return;
+
+            tabs.forEach(t => t.classList.remove("active"));
+            tab.classList.add("active");
+            loadMappoolData(activeTab);
+        });
+    });
+});
+
 function loadMappoolData(activeTab) {
     const mappoolContainer = document.querySelector(".modTitle");
     const comingSoon = document.querySelector(".coming-soon");
     
-    fetch(`../scripts/mappools/${activeTab}.json`)
+    fetch(`scripts/mappools/${activeTab}.json`)
         .then(response => {
+            console.log(response);
             if(!response.ok) {
                 comingSoon.style.display = "block";
                 mappoolContainer.style.display = "none";
@@ -36,25 +55,25 @@ function loadMappoolData(activeTab) {
                         <div id="mapBannerWrapper">
                             <a href="${map.beatmap_link}" target="_blank" rel="noopener noreferrer">
                                 <img id="banner" src="${map.image}" alt="${map.title} Banner">
-                                <img id="bannerBorder" src="../assets/images/mappoolCard/bannerBorder.png" alt="Banner Border">
+                                <img id="bannerBorder" src="assets/images/mappoolCard/bannerBorder.png" alt="Banner Border">
                             </a>
                             <div id="mapIDWrapper">
                                 <span class="mapID" data-beatmap-id="${map.beatmap_id}" onclick="copyToClipboard(this)">${map.beatmap_id}</span>
-                                <img id="mapIDBackground" src="../assets/images/mappoolCard/mapID.png" alt="Map ID Background">
+                                <img id="mapIDBackground" src="assets/images/mappoolCard/mapID.png" alt="Map ID Background">
                             </div>
                         </div>
                         <div id="mapStats">
                             <ul>
-                                <li>${parseFloat(starRating).toFixed(2)}<img class="mapIcon" src="../assets/images/mappoolCard/star.svg" alt="Star Icon"></li>
-                                <li>${Math.round(map.bpm)}<img class="mapIcon" src="../assets/images/mappoolCard/speed.svg" alt="Speed Icon"></li>
-                                <li>${map.length}<img class="mapIcon" src="../assets/images/mappoolCard/timelapse.svg" alt="Time Icon"></li>
+                                <li>${parseFloat(starRating).toFixed(2)}<img class="mapIcon" src="assets/images/mappoolCard/star.svg" alt="Star Icon"></li>
+                                <li>${Math.round(map.bpm)}<img class="mapIcon" src="assets/images/mappoolCard/speed.svg" alt="Speed Icon"></li>
+                                <li>${map.length}<img class="mapIcon" src="assets/images/mappoolCard/timelapse.svg" alt="Time Icon"></li>
                             </ul>
                         </div>
                     </div>
                     <div id="mapCreator">
                         <div id="modWrapper">
                             <span id="mod">${maps}</span>
-                            <img id="modBackground" src="../assets/images/mappoolCard/modBackground${mod.toUpperCase()}.png" alt="Mod Background">
+                            <img id="modBackground" src="assets/images/mappoolCard/modBackground${mod.toUpperCase()}.png" alt="Mod Background">
                         </div>
                         <div id="mapInfo">
                             <div id="songInfo">
@@ -68,7 +87,7 @@ function loadMappoolData(activeTab) {
                         </div>
                     </div>
                     <div id="difficulty">
-                        <img id="mapStatHover" src="../assets/images/mappoolCard/mapStatsHover.png">
+                        <img id="mapStatHover" src="assets/images/mappoolCard/mapStatsHover.png">
                         <div id="cs"><p>CS ${map.cs}</p></div>
                         <div id="od"><p>OD ${map.od}</p></div>
                         <div id="ar"><p>AR ${map.ar}</p></div>
