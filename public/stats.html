@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="css/mainNavbar.css">
     <link rel="stylesheet" href="css/mappoolNavbar.css">
     <link rel="stylesheet" href="css/mappoolCard.css">
+    <link rel="stylesheet" href="css/statsTable.css">
     <title>Stats</title>
 </head>
 <body id="stats">
@@ -34,12 +35,33 @@
       </div>
   </div>
 
-  <div id="mappoolListWrapper">
+  <div id="statListWrapper">
     <div id="containerCornerBackground">
-        <div id="mappoolCardContainer">
-            <div class="coming-soon-v">
+        <div id="statContainer">
+            <div class="coming-soon">
                 Coming Soon
             </div>
+            <table>
+                <thead>
+                    <th>
+                        <button>Placement</button>
+                    </th>
+                    <th>Avg</th>
+                    <th>NM1</th>
+                    <th>NM2</th>
+                    <th>NM3</th>
+                    <th>NM4</th>
+                    <th>HD1</th>
+                    <th>HD2</th>
+                    <th>HR1</th>
+                    <th>H2</th>
+                    <th>DT1</th>
+                    <th>DT2</th>
+                </thead>
+                <tbody id="userTableBody">
+                    
+                </tbody>
+            </table>
         </div>
     </div>
 </div>
@@ -48,8 +70,8 @@
       $("#nav-placeholder").load("components/navbar.html");
     });
     </script>
-  <script src="js/init.js"></script>
-  <script src="js/mappoolLoader.js"></script>
+  <script src="js/statsInit.js"></script>
+  <script src="js/statsLoader.js"></script>
   <script src="js/util.js"></script>
   <script src="js/linkSelection.js"></script>
 
