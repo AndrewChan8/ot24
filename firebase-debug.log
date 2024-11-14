@@ -14,3 +14,105 @@
 [debug] [2024-11-04T05:48:44.891Z] > refreshing access token with scopes: []
 [debug] [2024-11-04T05:48:44.892Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
 [debug] [2024-11-04T05:48:44.892Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-11-14T05:40:19.037Z] ----------------------------------------------------------------------
+[debug] [2024-11-14T05:40:19.038Z] Command:       /usr/bin/node /usr/local/bin/firebase deploy
+[debug] [2024-11-14T05:40:19.038Z] CLI Version:   13.23.1
+[debug] [2024-11-14T05:40:19.038Z] Platform:      linux
+[debug] [2024-11-14T05:40:19.039Z] Node Version:  v18.19.0
+[debug] [2024-11-14T05:40:19.040Z] Time:          Wed Nov 13 2024 21:40:19 GMT-0800 (Pacific Standard Time)
+[debug] [2024-11-14T05:40:19.040Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-11-14T05:40:19.042Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2024-11-14T05:40:19.109Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-11-14T05:40:19.109Z] > authorizing via signed-in user (tts.sophie88@gmail.com)
+[debug] [2024-11-14T05:40:19.109Z] [iam] checking project ot24-af207 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2024-11-14T05:40:19.109Z] Checked if tokens are valid: false, expires at: 1730693898884
+[debug] [2024-11-14T05:40:19.110Z] Checked if tokens are valid: false, expires at: 1730693898884
+[debug] [2024-11-14T05:40:19.110Z] > refreshing access token with scopes: []
+[debug] [2024-11-14T05:40:19.110Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2024-11-14T05:40:19.110Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-11-14T05:41:40.883Z] ----------------------------------------------------------------------
+[debug] [2024-11-14T05:41:40.884Z] Command:       /usr/bin/node /usr/local/bin/firebase deploy
+[debug] [2024-11-14T05:41:40.884Z] CLI Version:   13.23.1
+[debug] [2024-11-14T05:41:40.885Z] Platform:      linux
+[debug] [2024-11-14T05:41:40.885Z] Node Version:  v18.19.0
+[debug] [2024-11-14T05:41:40.885Z] Time:          Wed Nov 13 2024 21:41:40 GMT-0800 (Pacific Standard Time)
+[debug] [2024-11-14T05:41:40.885Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-11-14T05:41:40.887Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2024-11-14T05:41:40.941Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-11-14T05:41:40.941Z] > authorizing via signed-in user (tts.sophie88@gmail.com)
+[debug] [2024-11-14T05:41:40.941Z] [iam] checking project ot24-af207 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2024-11-14T05:41:40.942Z] Checked if tokens are valid: false, expires at: 1730693898884
+[debug] [2024-11-14T05:41:40.942Z] Checked if tokens are valid: false, expires at: 1730693898884
+[debug] [2024-11-14T05:41:40.942Z] > refreshing access token with scopes: []
+[debug] [2024-11-14T05:41:40.942Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2024-11-14T05:41:40.942Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-11-14T05:42:13.108Z] ----------------------------------------------------------------------
+[debug] [2024-11-14T05:42:13.109Z] Command:       /usr/bin/node /usr/local/bin/firebase deploy
+[debug] [2024-11-14T05:42:13.109Z] CLI Version:   13.23.1
+[debug] [2024-11-14T05:42:13.110Z] Platform:      linux
+[debug] [2024-11-14T05:42:13.110Z] Node Version:  v18.19.0
+[debug] [2024-11-14T05:42:13.110Z] Time:          Wed Nov 13 2024 21:42:13 GMT-0800 (Pacific Standard Time)
+[debug] [2024-11-14T05:42:13.110Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-11-14T05:42:13.111Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2024-11-14T05:42:13.166Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-11-14T05:42:13.166Z] > authorizing via signed-in user (tts.sophie88@gmail.com)
+[debug] [2024-11-14T05:42:13.166Z] [iam] checking project ot24-af207 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2024-11-14T05:42:13.167Z] Checked if tokens are valid: false, expires at: 1730693898884
+[debug] [2024-11-14T05:42:13.167Z] Checked if tokens are valid: false, expires at: 1730693898884
+[debug] [2024-11-14T05:42:13.167Z] > refreshing access token with scopes: []
+[debug] [2024-11-14T05:42:13.168Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2024-11-14T05:42:13.168Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-11-14T05:44:24.191Z] *** [apiv2] error from fetch(https://www.googleapis.com/oauth2/v3/token, {"headers":{},"method":"POST","body":{"_overheadLength":545,"_valueLength":212,"_valuesToMeasure":[],"writable":false,"readable":true,"dataSize":0,"maxDataSize":2097152,"pauseStreams":true,"_released":true,"_streams":[],"_currentStream":null,"_insideLoop":false,"_pendingNext":false,"_boundary":"--------------------------815271444658571246605124","_events":{},"_eventsCount":1}}): FetchError: request to https://www.googleapis.com/oauth2/v3/token failed, reason: connect ETIMEDOUT 2607:f8b0:400a:807::200a:443
+[debug] [2024-11-14T05:44:24.192Z] [iam] error while checking permissions, command may fail: FirebaseError: Authentication Error: Your credentials are no longer valid. Please run firebase login --reauth
+
+For CI servers and headless environments, generate a new token with firebase login:ci
+[debug] [2024-11-14T05:44:24.193Z] Checked if tokens are valid: false, expires at: 1730693898884
+[debug] [2024-11-14T05:44:24.193Z] Checked if tokens are valid: false, expires at: 1730693898884
+[debug] [2024-11-14T05:44:24.193Z] > refreshing access token with scopes: []
+[debug] [2024-11-14T05:44:24.193Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2024-11-14T05:44:24.194Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-11-14T05:44:24.196Z] *** [apiv2] error from fetch(https://firebase-public.firebaseio.com/cli.json, {"headers":{},"method":"GET"}): FetchError: request to https://firebase-public.firebaseio.com/cli.json failed, reason: connect ETIMEDOUT 2600:1901:0:4d00:::443
+[warn] ⚠  Unable to fetch the CLI MOTD and remote config. This is not a fatal error, but may indicate an issue with your network connection. 
+[debug] [2024-11-14T05:44:24.197Z] Failed to fetch MOTD FirebaseError: Failed to make request to https://firebase-public.firebaseio.com/cli.json
+[debug] [2024-11-14T05:46:19.899Z] ----------------------------------------------------------------------
+[debug] [2024-11-14T05:46:19.900Z] Command:       /usr/bin/node /usr/local/bin/firebase deploy
+[debug] [2024-11-14T05:46:19.900Z] CLI Version:   13.23.1
+[debug] [2024-11-14T05:46:19.901Z] Platform:      linux
+[debug] [2024-11-14T05:46:19.901Z] Node Version:  v18.19.0
+[debug] [2024-11-14T05:46:19.901Z] Time:          Wed Nov 13 2024 21:46:19 GMT-0800 (Pacific Standard Time)
+[debug] [2024-11-14T05:46:19.901Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-11-14T05:46:19.902Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2024-11-14T05:46:19.959Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-11-14T05:46:19.959Z] > authorizing via signed-in user (tts.sophie88@gmail.com)
+[debug] [2024-11-14T05:46:19.959Z] [iam] checking project ot24-af207 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2024-11-14T05:46:19.960Z] Checked if tokens are valid: false, expires at: 1730693898884
+[debug] [2024-11-14T05:46:19.960Z] Checked if tokens are valid: false, expires at: 1730693898884
+[debug] [2024-11-14T05:46:19.960Z] > refreshing access token with scopes: []
+[debug] [2024-11-14T05:46:19.960Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2024-11-14T05:46:19.960Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-11-14T05:48:29.952Z] *** [apiv2] error from fetch(https://www.googleapis.com/oauth2/v3/token, {"headers":{},"method":"POST","body":{"_overheadLength":545,"_valueLength":212,"_valuesToMeasure":[],"writable":false,"readable":true,"dataSize":0,"maxDataSize":2097152,"pauseStreams":true,"_released":true,"_streams":[],"_currentStream":null,"_insideLoop":false,"_pendingNext":false,"_boundary":"--------------------------200292365603625666791571","_events":{},"_eventsCount":1}}): FetchError: request to https://www.googleapis.com/oauth2/v3/token failed, reason: connect ETIMEDOUT 2607:f8b0:400a:804::200a:443
+[debug] [2024-11-14T05:48:29.952Z] [iam] error while checking permissions, command may fail: FirebaseError: Authentication Error: Your credentials are no longer valid. Please run firebase login --reauth
+
+For CI servers and headless environments, generate a new token with firebase login:ci
+[debug] [2024-11-14T05:48:29.954Z] Checked if tokens are valid: false, expires at: 1730693898884
+[debug] [2024-11-14T05:48:29.954Z] Checked if tokens are valid: false, expires at: 1730693898884
+[debug] [2024-11-14T05:48:29.954Z] > refreshing access token with scopes: []
+[debug] [2024-11-14T05:48:29.955Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2024-11-14T05:48:29.955Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-11-14T05:48:29.958Z] *** [apiv2] error from fetch(https://firebase-public.firebaseio.com/cli.json, {"headers":{},"method":"GET"}): FetchError: request to https://firebase-public.firebaseio.com/cli.json failed, reason: connect ETIMEDOUT 2600:1901:0:4d00:::443
+[warn] ⚠  Unable to fetch the CLI MOTD and remote config. This is not a fatal error, but may indicate an issue with your network connection. 
+[debug] [2024-11-14T05:48:29.959Z] Failed to fetch MOTD FirebaseError: Failed to make request to https://firebase-public.firebaseio.com/cli.json
+[debug] [2024-11-14T05:50:41.022Z] *** [apiv2] error from fetch(https://www.googleapis.com/oauth2/v3/token, {"headers":{},"method":"POST","body":{"_overheadLength":545,"_valueLength":212,"_valuesToMeasure":[],"writable":false,"readable":true,"dataSize":0,"maxDataSize":2097152,"pauseStreams":true,"_released":true,"_streams":[],"_currentStream":null,"_insideLoop":false,"_pendingNext":false,"_boundary":"--------------------------008140917326462863085930","_events":{},"_eventsCount":1}}): FetchError: request to https://www.googleapis.com/oauth2/v3/token failed, reason: connect ETIMEDOUT 2607:f8b0:400a:804::200a:443
+[debug] [2024-11-14T05:50:41.022Z] Authentication Error: Your credentials are no longer valid. Please run firebase login --reauth
+
+For CI servers and headless environments, generate a new token with firebase login:ci
+[debug] [2024-11-14T05:50:46.039Z] Error: Timed out.
+    at Timeout._onTimeout (/usr/local/lib/node_modules/firebase-tools/lib/utils.js:268:49)
+    at listOnTimeout (node:internal/timers:569:17)
+    at process.processTimers (node:internal/timers:512:7)
+[error] 
+[error] Error: An unexpected error has occurred.
