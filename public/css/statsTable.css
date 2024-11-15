@@ -1,5 +1,9 @@
-table, th, tr {
+th, tr {
     text-align: center;
+}
+
+tr {
+    background-color: #196e4f;
 }
 .nm {
     background-color: #7cbae5;
