@@ -65,3 +65,10 @@ th, tr {
 .rowHeader  {
     background-color: #387f5f;
 }
+
+.bodyData, .rowHeader {
+    color: white;
+    font-family: "Fredoka", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 700;
+}
