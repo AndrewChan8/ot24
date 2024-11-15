@@ -1,10 +1,7 @@
 function percentageColor(score, dataCell){
-    if(score >= 70 && score <= 100){
-        dataCell.style.backgroundColor = "green"
-    } else if(score >= 60 && score < 70){
-        dataCell.style.backgroundColor = "red";
-    } 
-
+    const opacity = Math.round((score * .01) * 100) / 100; 
+    dataCell.style.backgroundColor = `rgba(56, 127, 95, ${opacity})`;
+    console.log(opacity);
 }
 
 function loadStatData(activeTab) {
