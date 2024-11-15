@@ -1,6 +1,13 @@
+function percentageColor(score, dataCell){
+    if(score >= 70 && score <= 100){
+        dataCell.style.backgroundColor = "green"
+    } else if(score >= 60 && score < 70){
+        dataCell.style.backgroundColor = "red";
+    } 
+
+}
 
 function loadStatData(activeTab) {
-    const StatContainer = document.querySelector("#userTableBody");
     const comingSoon = document.querySelector(".coming-soon");
     const statsTable = document.querySelector("#statsTable");
     fetch(`scripts/stats/${activeTab}.json`)
@@ -33,15 +40,9 @@ function loadStatData(activeTab) {
                     } else {
                         dataCell.classList.add("bodyData");
                         const percentageValue = parseFloat(user[score]);
-                        if (percentageValue <= 100 && percentageValue >= 70){
-                            dataCell.style.backgroundColor = "#50a77a";
-                        } else if(percentageValue <= 70 && percentageValue >= 60){
-                            dataCell.style.backgroundColor = "red";
-                        }
+                        percentageColor(percentageValue, dataCell);
                     }
 
-
-                    console.log(dataCell);
                     row.appendChild(dataCell);
                 }
                 tableBody.appendChild(row);
@@ -52,11 +53,3 @@ function loadStatData(activeTab) {
             console.error("Error Fetching JSON:", error);
         });
 }
-
-/*
-
-<div id="customWrapper">
-    <img id="customBackground" src="../assets/images/mappoolCard/customMapBackground.png">
-    <img id="customIcon" src="../assets/images/mappoolCard/customMapIcon.png">
-</div>
-*/
