@@ -1,4 +1,50 @@
-table, th, td {
-    border: 1px solid;
-    border-collapse: collapse;
+table, th, tr {
+    text-align: center;
+}
+.nm {
+    background-color: #7cbae5;
+}
+
+.hd {
+    background-color: #e5cb7c;
+}
+
+.hr {
+    background-color: #e57c7c;
+}
+
+.dt {
+    background-color: #b07ce5;
+}
+
+.dt:last-child{
+    border-top-right-radius: 10px;
+}
+
+#avg {
+    background-color: #50a77a;
+}
+
+.nm, .hd, .hr, .dt, #avg {
+    color: white;
+    font-family: "Fredoka", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    text-align: center;
+    font-size: 25px;
+    padding: 1px 10px;
+}
+
+#placementButton {
+    padding: 5px 15px;
+    background-color: #50a77a; 
+    color: white; 
+    border: none; 
+    border-radius: 30px; 
+    cursor: pointer;
+    font-family: "Climate Crisis", sans-serif;
+    color: white;
+    text-decoration: none;
+    font-size: 2rem;
+    margin: 10px;
 }
