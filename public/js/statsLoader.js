@@ -28,7 +28,6 @@ function loadPercentageData(stats) {
                  const opacity = Math.round((score * .01) * 100) / 100; 
                  percentageColor(percentageValue, dataCell);
                  
-                
              }
              row.appendChild(dataCell);
          }
