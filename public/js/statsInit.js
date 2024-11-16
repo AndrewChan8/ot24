@@ -12,6 +12,7 @@ document.addEventListener("DOMContentLoaded", function() {
         tab.addEventListener("click", function(event) {
             event.preventDefault();
             const activeTab = tab.getAttribute("data-active");
+            console.log(activeTab);
             updateTournamentTitle(activeTab);
             tabs.forEach(t => t.classList.remove("active"));
             tab.classList.add("active");
@@ -21,9 +22,7 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 switchBtn.addEventListener("click", function() {
-    console.log("button clicked");
     const activeTab = document.querySelector('.nav-link.active').getAttribute("data-active");
-
     isPlacementView = !isPlacementView; // Toggle view state
     if (isPlacementView) {
         switchBtn.textContent = "Placement";
