@@ -39,7 +39,7 @@ if __name__ == "__main__":
 
     placementsPerPlayer[player] = sorted_res
 
-  print(placementsPerPlayer)
+  sorted_players = {k: v for k, v in sorted(placementsPerPlayer.items(), key=lambda x: x[1]["rank"])}
 
   with open(f'../placementsPerPlayer/{name}.json', 'w') as file:
-    json.dump(placementsPerPlayer, file, indent=4)
+    json.dump(sorted_players, file, indent=4)
