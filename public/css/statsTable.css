@@ -59,6 +59,9 @@ th, tr {
     background-color: #50a77a;
 }
 
+#seed {
+    background-color: #387f5f;
+}
 .nm, .hd, .hr, .dt, #avg, #seed {
     color: white;
     font-family: "Fredoka", system-ui;
@@ -102,25 +105,8 @@ th, tr {
     padding-right: 8px;
 }
 
-/* Styling for the table */
-table {
-    border-collapse: collapse;
+
+/* Highlight entire row including th on hover */
+tr:hover td, tr:hover {
+    background-color: rgba(181, 249, 226, 0.3);
 }
-
-/* Styling for the table header */
-th {
-    background-color: #387f5f; /* Background color for th elements */
-}
-
-
-/* Apply border-radius to the first and last column headers */
-th:first-child {
-    border-top-left-radius: 10px;
-}
-
-th:last-child {
-    border-top-right-radius: 10px;
-}
-
-
-

@@ -23,8 +23,10 @@ switchBtn.addEventListener("click", function() {
 
     isPlacementView = !isPlacementView; // Toggle view state
     if (isPlacementView) {
+        switchBtn.textContent = "MAX%"
         loadPlacementData(activeTab);
     } else {
+        switchBtn.textContent = "Placement";
         getStatData(activeTab);
     }
 })

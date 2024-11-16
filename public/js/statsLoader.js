@@ -25,8 +25,11 @@ function loadPercentageData(stats) {
              } else {
                  dataCell.classList.add("bodyData");
                  const percentageValue = parseFloat(user[score]);
-                 const opacity = Math.round((score * .01) * 100) / 100; 
-                 percentageColor(percentageValue, dataCell);
+                 if(score == "seed"){
+                    dataCell.style.backgroundColor = "#387f5f";
+                 } else {
+                     percentageColor(percentageValue, dataCell);
+                 }
                  
              }
              row.appendChild(dataCell);
