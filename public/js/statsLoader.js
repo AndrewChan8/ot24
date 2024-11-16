@@ -5,6 +5,7 @@ const tableBody = document.getElementById("userTableBody");
 function percentageColor(score, dataCell){
     const value = parseFloat(score);
     const opacity = Math.round((value * .01) * 100) / 100; 
+    console.log(opacity);
     dataCell.style.backgroundColor = `rgba(103, 189, 144, ${opacity})`;
 }
 
@@ -59,7 +60,6 @@ function loadPlacementData(stats){
 function getPercentData(activeTab) {
     fetch(`scripts/percentages/${activeTab}.json`)
         .then(response => {
-            console.log(response);
             if(!response.ok) {
                 comingSoon.style.display = "block";
                 statsTable.style.display = "none";
