@@ -21,7 +21,7 @@ th, tr {
     text-align: center;
 }
 
-#testHeader {
+#header {
     display: flex;
     align-items: center;
     flex-direction: column;
