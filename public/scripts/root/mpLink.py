@@ -45,8 +45,12 @@ def getMpData(mpLink):
       map_score = score["score"]
       currentPlayer = usernames[playerIDs.index(score['user_id'])]
       matchScores[currentPlayer][beatmap] = int(map_score)
+  
+  sortedMatchScores = {}
+  for player, scores in matchScores.items():
+    sortedMatchScores[player] = {bm: scores.get(bm, 0) for bm in beatmaps}
 
-  return beatmaps, matchScores
+  return beatmaps, sortedMatchScores
 
 def promptLinks():
   mpLinks = []
@@ -67,30 +71,60 @@ def promptLinks():
 
 if __name__ == "__main__":
   mpLinks = [
+116165171,
+116087727,
+116162129,
+116174469,
+116164711,
+116086530,
+116140974,
+116183207,
+116086530,
+116140974,
+116165171,
+116079414,
+116171459,
+116096627,
+116083928,
+116183250,
+116164891,
+116140974,
+116091924,
+116164821,
+116164937,
+116079485,
+116084051
   ]
 
   # mpLinks = promptLinks()
 
+  name = input("Enter mappool name:")
+  
   for link in mpLinks:
     beatmaps, results = getMpData(link)
 
-    if not os.path.exists('../mpResults/qf.json'):
-      with open('../mpResults/qf.json', 'w') as file:
+    if not os.path.exists(f'../mpResults/{name}.json'):
+      with open(f'../mpResults/{name}.json', 'w') as file:
         json.dump({}, file)
 
-    with open('../mpResults/qf.json', 'r') as file:
+    with open(f'../mpResults/{name}.json', 'r') as file:
       try:
         data = json.load(file)
       except json.JSONDecodeError:
         data = {}
+
     # Append the new data
     if "beatmaps" not in data:
       data["beatmaps"] = beatmaps
 
     for result in results:
-      data[result] = results[result]
-      data[result]['mpLink'] = int(link)
+      if result in data:
+        combined = {**data[result], **results[result]}
+        data[result] = combined
+        
+      else:
+        data[result] = results[result]
 
     # Write the updated data back to the file
-    with open('../mpResults/qf.json', 'w') as file:
+    with open(f'../mpResults/{name}.json', 'w') as file:
       json.dump(data, file, indent=4)
