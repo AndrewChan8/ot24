@@ -39,5 +39,7 @@ if __name__ == "__main__":
 
     placementsPerPlayer[player] = sorted_res
 
+  print(placementsPerPlayer)
+
   with open(f'../placementsPerPlayer/{name}.json', 'w') as file:
     json.dump(placementsPerPlayer, file, indent=4)
