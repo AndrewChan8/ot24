@@ -116,5 +116,6 @@ th, tr {
 
 /* Highlight entire row including th on hover */
 tr:hover td, tr:hover {
+    cursor: pointer;
     background-color: rgba(181, 249, 226, 0.3);
 }
