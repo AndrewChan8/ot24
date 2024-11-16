@@ -25,7 +25,10 @@ function loadPercentageData(stats) {
              } else {
                  dataCell.classList.add("bodyData");
                  const percentageValue = parseFloat(user[score]);
+                 const opacity = Math.round((score * .01) * 100) / 100; 
                  percentageColor(percentageValue, dataCell);
+                 
+                
              }
              row.appendChild(dataCell);
          }

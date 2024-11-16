@@ -3,7 +3,7 @@ const switchBtn = document.querySelector("#placementButton");
 
 document.addEventListener("DOMContentLoaded", function() {
     const defaultTab = "qualifiersStat";
-    loadStatData(defaultTab);
+    getStatData(defaultTab);
     
     tabs.forEach(tab => {
         tab.addEventListener("click", function(event) {
