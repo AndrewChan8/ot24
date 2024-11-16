@@ -3,7 +3,7 @@ function loadMappoolData(activeTab) {
     const mappoolContainer = document.querySelector(".modTitle");
     const comingSoon = document.querySelector(".coming-soon");
     
-    fetch(`scripts/mappools/${activeTab}.json`)
+    fetch(`scripts/${activeTab}.json`)
         .then(response => {
             console.log(response);
             if(!response.ok) {

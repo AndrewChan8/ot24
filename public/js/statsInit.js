@@ -5,7 +5,7 @@ let tournamentTitle = document.querySelector("#header");
 let isPlacementView = false;
 
 document.addEventListener("DOMContentLoaded", function() {
-    const defaultTab = "qualifiersStat";
+    const defaultTab = "qualifiers";
     getPlacementData(defaultTab);
     
     tabs.forEach(tab => {
@@ -38,19 +38,19 @@ function updateTournamentTitle(activeTab) {
     let title = "";
     console.log(activeTab);
     switch (activeTab) {
-        case "qualifiersStat":
+        case "qualifiers":
             title = "Qualifiers Results";
             break;
-        case "quarterFinalsStat":
+        case "quarterFinals":
             title = "Quarterfinals Results";
             break;
-        case "semifinalsStat":
+        case "semifinals":
             title = "Semifinals Results";
             break;
-        case "finalsStat":
+        case "finals":
             title = "Finals Results";
             break;
-        case "grandFinalsStat":
+        case "grandFinals":
             title = "Grandfinals Results";
             break;
     }
