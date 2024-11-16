@@ -32,7 +32,8 @@ th, tr {
 }
 
 #statsTable {
-    border-radius: 20px;
+    background-color: #01211c;
+    border-radius: 15px;
     margin: 0px 50px 50px 50px;
     padding: 0px;
 }
@@ -101,7 +102,7 @@ th, tr {
     font-weight: 700;
     font-size: 1.3em;
     text-align: right;
-    padding-right: 8px;
+    padding-right: 0px;
 }
 .bodyData, .colSeed {
     color: white;
@@ -110,9 +111,13 @@ th, tr {
     font-weight: 700;
     font-size: 1.3em;
     text-align: center;
-    padding-right: 8px;
 }
 
+
+.seedIcon {
+    width: 1.5em;
+    height: 1.5em;
+}
 
 /* Highlight entire row including th on hover */
 tr:hover td, tr:hover {
