@@ -21,6 +21,23 @@ th, tr {
     text-align: center;
 }
 
+#testHeader {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 15px 15px;
+    font-family: "Climate Crisis", sans-serif;
+    color: white;
+    font-size: 3em;
+}
+
+#statsTable {
+    background-color: #01211c;
+    border-radius: 20px;
+    margin: 0px 50px 50px 50px;
+    padding: 0px;
+}
+
 .nm {
     background-color: #7cbae5;
 }
@@ -48,8 +65,8 @@ th, tr {
     font-optical-sizing: auto;
     font-weight: 700;
     text-align: center;
-    font-size: 25px;
-    padding: 1px 10px;
+    font-size: 30px;
+    padding: 0px 10px;
 }
 
 #placementButton {
@@ -57,13 +74,15 @@ th, tr {
     background-color: #50a77a; 
     color: white; 
     border: none; 
-    border-radius: 30px; 
+    border-radius: 15px; 
     cursor: pointer;
     font-family: "Climate Crisis", sans-serif;
     color: white;
     text-decoration: none;
-    font-size: 2rem;
-    margin: 10px;
+    font-size: 1.75rem;
+    margin: 8px 0px 8px 8px;
+    width: 250px;
+    height: fit-content;
 }
 
 .rowHeader  {
@@ -78,6 +97,9 @@ th, tr {
     font-family: "Fredoka", system-ui;
     font-optical-sizing: auto;
     font-weight: 700;
+    font-size: 1.3em;
+    text-align: right;
+    padding-right: 8px;
 }
 
 /* Styling for the table */

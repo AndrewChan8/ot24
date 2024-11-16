@@ -3,7 +3,7 @@ const statsTable = document.querySelector("#statsTable");
 
 function percentageColor(score, dataCell){
     const opacity = Math.round((score * .01) * 100) / 100; 
-    dataCell.style.backgroundColor = `rgba(56, 127, 95, ${opacity})`;
+    dataCell.style.backgroundColor = `rgba(103, 189, 144, ${opacity})`;
     console.log(opacity);
 }
 
