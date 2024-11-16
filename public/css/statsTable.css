@@ -59,7 +59,7 @@ th, tr {
     background-color: #50a77a;
 }
 
-.nm, .hd, .hr, .dt, #avg {
+.nm, .hd, .hr, .dt, #avg, #seed {
     color: white;
     font-family: "Fredoka", system-ui;
     font-optical-sizing: auto;
