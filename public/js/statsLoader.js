@@ -1,67 +1,65 @@
 const comingSoon = document.querySelector(".coming-soon");
 const statsTable = document.querySelector("#statsTable");
-function percentageColor(value, dataCell){
+const tableBody = document.getElementById("userTableBody");
+
+function percentageColor(score, dataCell){
+    const value = parseFloat(score);
     const opacity = Math.round((value * .01) * 100) / 100; 
     dataCell.style.backgroundColor = `rgba(103, 189, 144, ${opacity})`;
+}
+
+function appendUsername(row, username){
+    const usernameCell = document.createElement("td");
+    const usernameText = document.createTextNode(username);
+    usernameCell.appendChild(usernameText);
+    usernameCell.classList.add("rowHeader");  
+    row.appendChild(usernameCell);
 }
 
 function loadPercentageData(stats) {
     statsTable.style.display = "block";
     comingSoon.style.display = "none";
-    const tableBody = document.getElementById("userTableBody");
     tableBody.innerHTML = "";
-    stats.forEach((user) => {
-         console.log(user);
-         const row = document.createElement("tr");
-         for(let score in user){
-             const dataCell = document.createElement("td");
-             const dataText = document.createTextNode(user[score]);
+    for(let userData in stats){
+        const row = document.createElement("tr");
+        appendUsername(row, userData);
+        for(const percent in stats[userData]){
+            let score = stats[userData][percent];
+            const dataCell = document.createElement("td");
+            const dataText = document.createTextNode(score);
+            dataCell.appendChild(dataText);
+            dataCell.classList.add("bodyData");
 
-             dataCell.appendChild(dataText);
-             if(score == "username"){
-                 dataCell.classList.add("rowHeader");
-             } else if(score == "seed"){
-                dataCell.classList.add("colSeed");
-             }
-             else {
-                 dataCell.classList.add("bodyData");
-                 const percentageValue = parseFloat(user[score]);
-                 percentageColor(percentageValue, dataCell);
-             }
-             row.appendChild(dataCell);
-         }
-         tableBody.appendChild(row);
-    })
+            percentageColor(score, dataCell);
+            row.appendChild(dataCell);
+        }
+        tableBody.appendChild(row);
+    }   
 }
     
-function loadPlacementData(){
+function loadPlacementData(stats){
     statsTable.style.display = "block";
     comingSoon.style.display = "none";
-    const tableBody = document.getElementById("userTableBody");
     tableBody.innerHTML = "";
-    stats.forEach((user) => {
-         console.log(user);
-         const row = document.createElement("tr");
-         for(let score in user){
-             const dataCell = document.createElement("td");
-             const dataText = document.createTextNode(1);
-
-             dataCell.appendChild(dataText);
-             if(score == "username"){
-                 dataCell.classList.add("rowHeader");
-             } else {
-                 dataCell.classList.add("bodyData");
-                 const percentageValue = parseFloat(user[score]);
-                 percentageColor(percentageValue, dataCell);
-             }
-             row.appendChild(dataCell);
-         }
-         tableBody.appendChild(row);
-    })
+    for(let userData in stats){
+        const row = document.createElement("tr");
+        appendUsername(row, userData);
+        for(const percent in stats[userData]){
+            let score = stats[userData][percent];
+            const dataCell = document.createElement("td");
+            const dataText = document.createTextNode(score);
+            dataCell.appendChild(dataText);
+            dataCell.classList.add("bodyData");
+            
+            percentageColor(score, dataCell);
+            row.appendChild(dataCell);
+        }
+        tableBody.appendChild(row);
+    }   
 }
 
-function getStatData(activeTab) {
-    fetch(`scripts/stats/${activeTab}.json`)
+function getPercentData(activeTab) {
+    fetch(`scripts/percentages/${activeTab}.json`)
         .then(response => {
             console.log(response);
             if(!response.ok) {
@@ -83,9 +81,9 @@ function getStatData(activeTab) {
 
 
 function getPlacementData(activeTab){
-    console.log(activeTab);
-    fetch(`scripts/stats/${activeTab}`)
+    fetch(`scripts/placements/${activeTab}.json`)
         .then(response => {
+            console.log(response);
             if(!response.ok) {
                 comingSoon.style.display = "block";
                 statsTable.style.display = "none";
@@ -95,9 +93,10 @@ function getPlacementData(activeTab){
             return response.json();
         })
         .then(stats => {
-            loadPlacementData(stats);
+           // make table 
+           loadPlacementData(stats);
         })
         .catch(error => {
-            console.log("Error Fetching JSON", error);
-        })
+            console.error("Error Fetching JSON:", error);
+        });
 }

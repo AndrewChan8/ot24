@@ -6,7 +6,7 @@ let isPlacementView = false;
 
 document.addEventListener("DOMContentLoaded", function() {
     const defaultTab = "qualifiersStat";
-    getStatData(defaultTab);
+    getPercentData(defaultTab);
     
     tabs.forEach(tab => {
         tab.addEventListener("click", function(event) {
@@ -15,21 +15,22 @@ document.addEventListener("DOMContentLoaded", function() {
             updateTournamentTitle(activeTab);
             tabs.forEach(t => t.classList.remove("active"));
             tab.classList.add("active");
-            getStatData(activeTab);
+            getPercentData(activeTab);
         });
     });
 });
 
 switchBtn.addEventListener("click", function() {
+    console.log("button clicked");
     const activeTab = document.querySelector('.nav-link.active').getAttribute("data-active");
 
     isPlacementView = !isPlacementView; // Toggle view state
     if (isPlacementView) {
         switchBtn.textContent = "MAX%"
-        loadPlacementData(activeTab);
+        getPlacementData(activeTab);
     } else {
         switchBtn.textContent = "Placement";
-        getStatData(activeTab);
+        getPercentData(activeTab);
     }
 })
 
