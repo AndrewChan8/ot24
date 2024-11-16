@@ -32,7 +32,6 @@ th, tr {
 }
 
 #statsTable {
-    background-color: #01211c;
     border-radius: 20px;
     margin: 0px 50px 50px 50px;
     padding: 0px;
@@ -59,9 +58,10 @@ th, tr {
     background-color: #50a77a;
 }
 
-#seed {
+#seed, .colSeed {
     background-color: #387f5f;
 }
+
 .nm, .hd, .hr, .dt, #avg, #seed {
     color: white;
     font-family: "Fredoka", system-ui;
@@ -94,14 +94,22 @@ th, tr {
     padding-right: 25px;
 }
 
-
-.bodyData, .rowHeader {
+.rowHeader {
     color: white;
     font-family: "Fredoka", system-ui;
     font-optical-sizing: auto;
     font-weight: 700;
     font-size: 1.3em;
     text-align: right;
+    padding-right: 8px;
+}
+.bodyData, .colSeed {
+    color: white;
+    font-family: "Fredoka", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-size: 1.3em;
+    text-align: center;
     padding-right: 8px;
 }
 

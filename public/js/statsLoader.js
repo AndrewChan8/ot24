@@ -1,9 +1,10 @@
 const comingSoon = document.querySelector(".coming-soon");
 const statsTable = document.querySelector("#statsTable");
 
-function percentageColor(score, dataCell){
-    const opacity = Math.round((score * .01) * 100) / 100; 
+function percentageColor(value, dataCell){
+    const opacity = Math.round((value * .01) * 100) / 100; 
     dataCell.style.backgroundColor = `rgba(103, 189, 144, ${opacity})`;
+    
     console.log(opacity);
 }
 
@@ -22,15 +23,13 @@ function loadPercentageData(stats) {
              dataCell.appendChild(dataText);
              if(score == "username"){
                  dataCell.classList.add("rowHeader");
-             } else {
+             } else if(score == "seed"){
+                dataCell.classList.add("colSeed");
+             }
+             else {
                  dataCell.classList.add("bodyData");
                  const percentageValue = parseFloat(user[score]);
-                 if(score == "seed"){
-                    dataCell.style.backgroundColor = "#387f5f";
-                 } else {
-                     percentageColor(percentageValue, dataCell);
-                 }
-                 
+                 percentageColor(percentageValue, dataCell);
              }
              row.appendChild(dataCell);
          }
