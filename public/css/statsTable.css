@@ -32,7 +32,7 @@ th, tr {
 }
 
 #statsTable {
-    background-color: #01211c;
+    background-color: #387f5f;
     border-radius: 15px;
     margin: 0px 50px 50px 50px;
     padding: 0px;
@@ -104,13 +104,17 @@ th, tr {
     text-align: right;
     padding-right: 0px;
 }
-.bodyData, .colSeed {
+.bodyData, .colSeed, .placementBodyData {
     color: white;
     font-family: "Fredoka", system-ui;
     font-optical-sizing: auto;
     font-weight: 700;
     font-size: 1.3em;
     text-align: center;
+}
+
+.placementBodyData {
+    
 }
 
 

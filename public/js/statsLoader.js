@@ -49,9 +49,7 @@ function loadPlacementData(stats){
             const dataCell = document.createElement("td");
             const dataText = document.createTextNode(score);
             dataCell.appendChild(dataText);
-            dataCell.classList.add("bodyData");
-            
-            percentageColor(score, dataCell);
+            dataCell.classList.add("placementBodyData");
             row.appendChild(dataCell);
         }
         tableBody.appendChild(row);
@@ -81,7 +79,7 @@ function getPercentData(activeTab) {
 
 
 function getPlacementData(activeTab){
-    fetch(`scripts/placements/${activeTab}.json`)
+    fetch(`scripts/placementsPerPlayer/${activeTab}.json`)
         .then(response => {
             console.log(response);
             if(!response.ok) {
