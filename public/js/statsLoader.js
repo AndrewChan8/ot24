@@ -7,7 +7,6 @@ function percentageColor(score, dataCell){
     console.log(opacity);
 }
 
-
 function loadPercentageData(stats) {
     statsTable.style.display = "block";
     comingSoon.style.display = "none";
@@ -28,15 +27,39 @@ function loadPercentageData(stats) {
                  const percentageValue = parseFloat(user[score]);
                  percentageColor(percentageValue, dataCell);
              }
-
              row.appendChild(dataCell);
          }
          tableBody.appendChild(row);
     })
 }
     
+function loadPlacementData(){
+    statsTable.style.display = "block";
+    comingSoon.style.display = "none";
+    const tableBody = document.getElementById("userTableBody");
+    tableBody.innerHTML = "";
+    stats.forEach((user) => {
+         console.log(user);
+         const row = document.createElement("tr");
+         for(let score in user){
+             const dataCell = document.createElement("td");
+             const dataText = document.createTextNode(1);
 
-function loadStatData(activeTab) {
+             dataCell.appendChild(dataText);
+             if(score == "username"){
+                 dataCell.classList.add("rowHeader");
+             } else {
+                 dataCell.classList.add("bodyData");
+                 const percentageValue = parseFloat(user[score]);
+                 percentageColor(percentageValue, dataCell);
+             }
+             row.appendChild(dataCell);
+         }
+         tableBody.appendChild(row);
+    })
+}
+
+function getStatData(activeTab) {
     fetch(`scripts/stats/${activeTab}.json`)
         .then(response => {
             console.log(response);
@@ -58,7 +81,7 @@ function loadStatData(activeTab) {
 }
 
 
-function loadPlacementData(activeTab){
+function getPlacementData(activeTab){
     console.log(activeTab);
     fetch(`scripts/stats/${activeTab}`)
         .then(response => {
@@ -71,7 +94,7 @@ function loadPlacementData(activeTab){
             return response.json();
         })
         .then(stats => {
-            console.log(stats)
+            loadPlacementData(stats);
         })
         .catch(error => {
             console.log("Error Fetching JSON", error);
