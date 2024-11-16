@@ -22,9 +22,8 @@ if __name__ == "__main__":
   resultsList = ["rank", "avg", *mods]
 
   for player in results:
-    index = rankings.index(player)
     temp = {}
-    temp["rank"] = index + 1
+    temp["rank"] = rankings.index(player) + 1
     acc = 0
     for score in results[player]:
       raw_score = results[player][score]
@@ -40,6 +39,7 @@ if __name__ == "__main__":
       percent = round((percent * 100), 2)
       acc += percent
       temp[score] = percent
+      
     acc /= len(mods)
     temp["avg"] = round(acc, 2)
 
