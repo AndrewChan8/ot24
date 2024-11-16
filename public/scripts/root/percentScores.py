@@ -39,7 +39,7 @@ if __name__ == "__main__":
       percent = round((percent * 100), 2)
       acc += percent
       temp[score] = percent
-      
+
     acc /= len(mods)
     temp["avg"] = round(acc, 2)
 
@@ -47,5 +47,7 @@ if __name__ == "__main__":
 
     percentages[player] = sorted_res
 
+  sorted_players = {k: v for k, v in sorted(percentages.items(), key=lambda x: x[1]["rank"])}
+
   with open(f'../percentages/{name}.json', 'w') as file:
-    json.dump(percentages, file, indent=4)
+    json.dump(sorted_players, file, indent=4)
