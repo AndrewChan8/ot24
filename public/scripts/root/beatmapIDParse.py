@@ -95,41 +95,24 @@ def getBeatmapData(beatmapID, mod):
   return beatmapData
 
 if __name__ == "__main__":
-  mapIDs = [
-4705823,
-4020786,
-3752950,
-2791096,
-3570319,
-4132842,
-4368338,
-2267424,
-2514463,
-3094637
-  ]
+  name = input("Enter mappool name: ")
+  mapIDs = []
 
-  mods = {
-    "nm": 4,
-    "hd": 2,
-    "hr": 2,
-    "dt": 2,
-    "fm": 0,
-    "tb": 0
-  }
+  with open(f'../rawBeatmapIDs/{name}.txt', 'r') as file:
+    mapIDs = [line.strip() for line in file]
 
-  modList = [f"{key}{i+1}" for key, count in mods.items() for i in range(count)]
+  with open(f'../other/{name}.json', 'r') as file:
+    mods = json.load(file)
 
   mappool = {}
 
   for i, id in enumerate(mapIDs):
-    mapData = getBeatmapData(id, modList[i])
+    mapData = getBeatmapData(id, mods[i])
 
-    if modList[i] == "tb1":
+    if mods[i] == "tb1":
       mappool[f"tb"] = mapData
     else:
-      mappool[f"{modList[i]}"] = mapData
-
-  name = input("Enter mappool name:")
+      mappool[f"{mods[i]}"] = mapData
 
   with open(f"../mappools/{name}.json", "w") as outfile:
     json.dump(mappool, outfile, indent=4)

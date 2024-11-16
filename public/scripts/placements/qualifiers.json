@@ -6,8 +6,11 @@
         "Chheng",
         "Rinko Shirokane",
         "sreal",
+        "nairuzu",
         "eddy",
         "-Tynamo",
+        "Chichobi",
+        "Wunderfull",
         "minatoaqua1",
         "-Elaina",
         "Exalon",
@@ -15,10 +18,7 @@
         "Ryo Yamada",
         "Bujebus",
         "shroomerh",
-        "tilapia",
-        "Wunderfull",
-        "nairuzu",
-        "Chichobi"
+        "tilapia"
     ],
     "nm2": [
         "Rinko Shirokane",
@@ -33,13 +33,13 @@
         "Ryo Yamada",
         "Bujebus",
         "minatoaqua1",
+        "Chichobi",
         "Exalon",
         "Mains",
         "shroomerh",
-        "tilapia",
         "Wunderfull",
         "nairuzu",
-        "Chichobi"
+        "tilapia"
     ],
     "nm3": [
         "yukinasimp",
@@ -53,14 +53,14 @@
         "Chheng",
         "Exalon",
         "Rinko Shirokane",
+        "Wunderfull",
         "Chichobi",
         "Mains",
         "-Elaina",
+        "nairuzu",
         "shroomerh",
         "Bujebus",
-        "tilapia",
-        "Wunderfull",
-        "nairuzu"
+        "tilapia"
     ],
     "nm4": [
         "yukinasimp",
@@ -70,18 +70,18 @@
         "Chheng",
         "Chichobi",
         "lil yachty",
+        "nairuzu",
         "Rinko Shirokane",
         "Exalon",
         "-Elaina",
         "sreal",
         "Ryo Yamada",
         "minatoaqua1",
+        "Wunderfull",
         "Mains",
         "shroomerh",
         "Bujebus",
-        "tilapia",
-        "Wunderfull",
-        "nairuzu"
+        "tilapia"
     ],
     "hd1": [
         "-Tynamo",
@@ -92,6 +92,7 @@
         "Rinko Shirokane",
         "lil yachty",
         "Tile",
+        "Wunderfull",
         "nairuzu",
         "Mains",
         "Exalon",
@@ -101,8 +102,7 @@
         "Ryo Yamada",
         "Bujebus",
         "minatoaqua1",
-        "tilapia",
-        "Wunderfull"
+        "tilapia"
     ],
     "hd2": [
         "eddy",
@@ -111,6 +111,7 @@
         "Rinko Shirokane",
         "-Tynamo",
         "Chichobi",
+        "Wunderfull",
         "lil yachty",
         "Exalon",
         "Mains",
@@ -122,8 +123,7 @@
         "Tile",
         "minatoaqua1",
         "Bujebus",
-        "tilapia",
-        "Wunderfull"
+        "tilapia"
     ],
     "hr1": [
         "eddy",
@@ -142,9 +142,9 @@
         "Chichobi",
         "shroomerh",
         "sreal",
+        "Wunderfull",
         "-Elaina",
-        "tilapia",
-        "Wunderfull"
+        "tilapia"
     ],
     "hr2": [
         "eddy",
@@ -164,8 +164,8 @@
         "nairuzu",
         "-Elaina",
         "sreal",
-        "tilapia",
-        "Wunderfull"
+        "Wunderfull",
+        "tilapia"
     ],
     "dt1": [
         "eddy",
@@ -183,10 +183,10 @@
         "Mains",
         "minatoaqua1",
         "sreal",
+        "Wunderfull",
         "-Elaina",
         "shroomerh",
-        "tilapia",
-        "Wunderfull"
+        "tilapia"
     ],
     "dt2": [
         "eddy",
@@ -210,24 +210,24 @@
         "tilapia"
     ],
     "rankings": {
-        "eddy": 22,
+        "eddy": 23,
         "yukinasimp": 41,
-        "Tile": 50,
-        "-Tynamo": 51,
+        "Tile": 51,
+        "-Tynamo": 52,
         "Chheng": 56,
-        "Rinko Shirokane": 56,
-        "lil yachty": 76,
-        "Ryo Yamada": 92,
-        "Exalon": 102,
-        "sreal": 114,
-        "Mains": 117,
-        "Chichobi": 117,
-        "minatoaqua1": 119,
-        "Bujebus": 119,
-        "-Elaina": 129,
-        "nairuzu": 136,
-        "shroomerh": 147,
-        "tilapia": 175,
-        "Wunderfull": 181
+        "Rinko Shirokane": 57,
+        "lil yachty": 77,
+        "Ryo Yamada": 98,
+        "Chichobi": 103,
+        "Exalon": 109,
+        "nairuzu": 113,
+        "sreal": 117,
+        "minatoaqua1": 125,
+        "Mains": 126,
+        "Bujebus": 128,
+        "Wunderfull": 138,
+        "-Elaina": 138,
+        "shroomerh": 158,
+        "tilapia": 190
     }
 }
