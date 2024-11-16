@@ -1,10 +1,10 @@
 How to use:
 
 1:
-create a rawBeatmapIDs/<name-of-stage>.txt and copy and paste the beatmap IDs. Refer to qualifiers.txt as a referrence
+create a `rawBeatmapIDs/<name-of-stage>.txt` and copy and paste the beatmap IDs. Refer to qualifiers.txt as a referrence
 
 2:
-create a rawMpLinks/<name-of-stage>.txt and copy and paste the mp link IDs. Refer to qualifiers.txt as a referrence
+create a `rawMpLinks/<name-of-stage>.txt` and copy and paste the mp link IDs. Refer to qualifiers.txt as a referrence
 
 3:
 `python3 getMods.py`
