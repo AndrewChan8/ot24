@@ -1,11 +1,8 @@
 const comingSoon = document.querySelector(".coming-soon");
 const statsTable = document.querySelector("#statsTable");
-
 function percentageColor(value, dataCell){
     const opacity = Math.round((value * .01) * 100) / 100; 
     dataCell.style.backgroundColor = `rgba(103, 189, 144, ${opacity})`;
-    
-    console.log(opacity);
 }
 
 function loadPercentageData(stats) {
