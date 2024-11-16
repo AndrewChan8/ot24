@@ -45,8 +45,12 @@ def getMpData(mpLink):
       map_score = score["score"]
       currentPlayer = usernames[playerIDs.index(score['user_id'])]
       matchScores[currentPlayer][beatmap] = int(map_score)
+  
+  sortedMatchScores = {}
+  for player, scores in matchScores.items():
+    sortedMatchScores[player] = {bm: scores.get(bm, 0) for bm in beatmaps}
 
-  return beatmaps, matchScores
+  return beatmaps, sortedMatchScores
 
 def promptLinks():
   mpLinks = []
@@ -108,6 +112,7 @@ if __name__ == "__main__":
         data = json.load(file)
       except json.JSONDecodeError:
         data = {}
+
     # Append the new data
     if "beatmaps" not in data:
       data["beatmaps"] = beatmaps

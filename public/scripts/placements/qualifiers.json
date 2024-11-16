@@ -6,11 +6,8 @@
         "Chheng",
         "Rinko Shirokane",
         "sreal",
-        "nairuzu",
         "eddy",
         "-Tynamo",
-        "Chichobi",
-        "Wunderfull",
         "minatoaqua1",
         "-Elaina",
         "Exalon",
@@ -18,7 +15,10 @@
         "Ryo Yamada",
         "Bujebus",
         "shroomerh",
-        "tilapia"
+        "tilapia",
+        "Wunderfull",
+        "nairuzu",
+        "Chichobi"
     ],
     "nm2": [
         "Rinko Shirokane",
@@ -33,13 +33,13 @@
         "Ryo Yamada",
         "Bujebus",
         "minatoaqua1",
-        "Chichobi",
         "Exalon",
         "Mains",
         "shroomerh",
+        "tilapia",
         "Wunderfull",
         "nairuzu",
-        "tilapia"
+        "Chichobi"
     ],
     "nm3": [
         "yukinasimp",
@@ -53,14 +53,14 @@
         "Chheng",
         "Exalon",
         "Rinko Shirokane",
-        "Wunderfull",
         "Chichobi",
         "Mains",
         "-Elaina",
-        "nairuzu",
         "shroomerh",
         "Bujebus",
-        "tilapia"
+        "tilapia",
+        "Wunderfull",
+        "nairuzu"
     ],
     "nm4": [
         "yukinasimp",
@@ -70,18 +70,18 @@
         "Chheng",
         "Chichobi",
         "lil yachty",
-        "nairuzu",
         "Rinko Shirokane",
         "Exalon",
         "-Elaina",
         "sreal",
         "Ryo Yamada",
         "minatoaqua1",
-        "Wunderfull",
         "Mains",
         "shroomerh",
         "Bujebus",
-        "tilapia"
+        "tilapia",
+        "Wunderfull",
+        "nairuzu"
     ],
     "hd1": [
         "-Tynamo",
@@ -92,7 +92,6 @@
         "Rinko Shirokane",
         "lil yachty",
         "Tile",
-        "Wunderfull",
         "nairuzu",
         "Mains",
         "Exalon",
@@ -102,7 +101,8 @@
         "Ryo Yamada",
         "Bujebus",
         "minatoaqua1",
-        "tilapia"
+        "tilapia",
+        "Wunderfull"
     ],
     "hd2": [
         "eddy",
@@ -111,7 +111,6 @@
         "Rinko Shirokane",
         "-Tynamo",
         "Chichobi",
-        "Wunderfull",
         "lil yachty",
         "Exalon",
         "Mains",
@@ -123,7 +122,8 @@
         "Tile",
         "minatoaqua1",
         "Bujebus",
-        "tilapia"
+        "tilapia",
+        "Wunderfull"
     ],
     "hr1": [
         "eddy",
@@ -142,9 +142,9 @@
         "Chichobi",
         "shroomerh",
         "sreal",
-        "Wunderfull",
         "-Elaina",
-        "tilapia"
+        "tilapia",
+        "Wunderfull"
     ],
     "hr2": [
         "eddy",
@@ -156,7 +156,6 @@
         "Ryo Yamada",
         "Chichobi",
         "Exalon",
-        "sreal",
         "lil yachty",
         "Bujebus",
         "shroomerh",
@@ -164,8 +163,9 @@
         "minatoaqua1",
         "nairuzu",
         "-Elaina",
-        "Wunderfull",
-        "tilapia"
+        "sreal",
+        "tilapia",
+        "Wunderfull"
     ],
     "dt1": [
         "eddy",
@@ -182,11 +182,11 @@
         "Chheng",
         "Mains",
         "minatoaqua1",
-        "Wunderfull",
+        "sreal",
         "-Elaina",
         "shroomerh",
         "tilapia",
-        "sreal"
+        "Wunderfull"
     ],
     "dt2": [
         "eddy",
@@ -210,24 +210,24 @@
         "tilapia"
     ],
     "rankings": {
-        "eddy": 23,
+        "eddy": 22,
         "yukinasimp": 41,
-        "Tile": 51,
-        "-Tynamo": 52,
+        "Tile": 50,
+        "-Tynamo": 51,
         "Chheng": 56,
-        "Rinko Shirokane": 57,
-        "lil yachty": 78,
-        "Ryo Yamada": 98,
-        "Chichobi": 103,
-        "Exalon": 109,
+        "Rinko Shirokane": 56,
+        "lil yachty": 76,
+        "Ryo Yamada": 92,
+        "Exalon": 102,
         "sreal": 114,
-        "nairuzu": 114,
-        "minatoaqua1": 126,
-        "Mains": 127,
-        "Bujebus": 129,
-        "Wunderfull": 137,
-        "-Elaina": 138,
-        "shroomerh": 158,
-        "tilapia": 189
+        "Mains": 117,
+        "Chichobi": 117,
+        "minatoaqua1": 119,
+        "Bujebus": 119,
+        "-Elaina": 129,
+        "nairuzu": 136,
+        "shroomerh": 147,
+        "tilapia": 175,
+        "Wunderfull": 181
     }
 }
