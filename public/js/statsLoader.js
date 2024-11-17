@@ -27,7 +27,13 @@ function loadPercentageData(stats) {
         for(const percent in stats[userData]){
             let score = stats[userData][percent];
             const dataCell = document.createElement("td");
-            const dataText = document.createTextNode(`${score}%`);
+            let dataText;
+            if(percent == "rank"){
+                dataText = document.createTextNode(score);
+            } else {
+                dataText = document.createTextNode(`${score}%`);
+            }
+            
             dataCell.appendChild(dataText);
             dataCell.classList.add("bodyData");
 
