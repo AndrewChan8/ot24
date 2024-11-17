@@ -91,7 +91,12 @@ if __name__ == "__main__":
       else:
         scores = results[result]
 
+      for map in beatmaps:
+        if map not in scores:
+          scores[map] = 0
+          
       sorted_maps = {key: scores[key] for key in beatmaps if key in scores}
+
       data[result] = sorted_maps
 
     # Write the updated data back to the file
