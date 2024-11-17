@@ -27,7 +27,7 @@ function loadPercentageData(stats) {
         for(const percent in stats[userData]){
             let score = stats[userData][percent];
             const dataCell = document.createElement("td");
-            const dataText = document.createTextNode(score);
+            const dataText = document.createTextNode(`${score}%`);
             dataCell.appendChild(dataText);
             dataCell.classList.add("bodyData");
 
