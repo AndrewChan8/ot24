@@ -107,6 +107,78 @@
         "Kokoronashi": 350389,
         "Furin Kagerou": 448226
     },
+    "Damascus": {
+        "Sekai ga Katachi Nakushitemo": 702406,
+        "Crystallite Dream": 379088,
+        "Karada wa Shoujiki datte Ittenno": 324205,
+        "RAMSING": 209292,
+        "Apollo 69": 84667,
+        "BREAK LAW": 86432,
+        "Hana ni Natte": 437912,
+        "Hestia": 399310,
+        "Kokoronashi": 317723,
+        "Furin Kagerou": 191397
+    },
+    "opic123": {
+        "Sekai ga Katachi Nakushitemo": 268000,
+        "Crystallite Dream": 160663,
+        "Karada wa Shoujiki datte Ittenno": 207976,
+        "RAMSING": 76189,
+        "Apollo 69": 73341,
+        "BREAK LAW": 125014,
+        "Hana ni Natte": 137103,
+        "Hestia": 75070,
+        "Kokoronashi": 137196,
+        "Furin Kagerou": 92611
+    },
+    "Furyfish": {
+        "Sekai ga Katachi Nakushitemo": 689962,
+        "Crystallite Dream": 415443,
+        "Karada wa Shoujiki datte Ittenno": 690623,
+        "RAMSING": 693351,
+        "Apollo 69": 222704,
+        "BREAK LAW": 190403,
+        "Hana ni Natte": 674985,
+        "Hestia": 502144,
+        "Kokoronashi": 750712,
+        "Furin Kagerou": 340532
+    },
+    "Indy": {
+        "Sekai ga Katachi Nakushitemo": 276572,
+        "Crystallite Dream": 84590,
+        "Karada wa Shoujiki datte Ittenno": 100151,
+        "RAMSING": 80772,
+        "Apollo 69": 44736,
+        "BREAK LAW": 35156,
+        "Hana ni Natte": 125380,
+        "Hestia": 52618,
+        "Kokoronashi": 38361,
+        "Furin Kagerou": 0
+    },
+    "Varler": {
+        "Sekai ga Katachi Nakushitemo": 746432,
+        "Crystallite Dream": 425058,
+        "Karada wa Shoujiki datte Ittenno": 250836,
+        "RAMSING": 237784,
+        "Apollo 69": 96172,
+        "BREAK LAW": 280762,
+        "Hana ni Natte": 421536,
+        "Hestia": 329572,
+        "Kokoronashi": 250715,
+        "Furin Kagerou": 82636
+    },
+    "TiBom": {
+        "Sekai ga Katachi Nakushitemo": 369007,
+        "Crystallite Dream": 147400,
+        "Karada wa Shoujiki datte Ittenno": 163869,
+        "RAMSING": 93507,
+        "Apollo 69": 56827,
+        "BREAK LAW": 163732,
+        "Hana ni Natte": 142900,
+        "Hestia": 69265,
+        "Kokoronashi": 156335,
+        "Furin Kagerou": 214388
+    },
     "tilapia": {
         "Sekai ga Katachi Nakushitemo": 148234,
         "Crystallite Dream": 27661,
@@ -154,6 +226,54 @@
         "Hestia": 565001,
         "Kokoronashi": 586219,
         "Furin Kagerou": 538641
+    },
+    "anjroo": {
+        "Sekai ga Katachi Nakushitemo": 413004,
+        "Crystallite Dream": 322519,
+        "Karada wa Shoujiki datte Ittenno": 370394,
+        "RAMSING": 236526,
+        "Apollo 69": 136674,
+        "BREAK LAW": 67409,
+        "Hana ni Natte": 221878,
+        "Hestia": 82655,
+        "Kokoronashi": 275446,
+        "Furin Kagerou": 417368
+    },
+    "NEPUUUUUUUUUUUU": {
+        "Sekai ga Katachi Nakushitemo": 372553,
+        "Crystallite Dream": 361197,
+        "Karada wa Shoujiki datte Ittenno": 489407,
+        "RAMSING": 211978,
+        "Apollo 69": 152811,
+        "BREAK LAW": 170201,
+        "Hana ni Natte": 340961,
+        "Hestia": 156556,
+        "Kokoronashi": 298625,
+        "Furin Kagerou": 334770
+    },
+    "enslow": {
+        "Sekai ga Katachi Nakushitemo": 412852,
+        "Crystallite Dream": 364227,
+        "Karada wa Shoujiki datte Ittenno": 173993,
+        "RAMSING": 218102,
+        "Apollo 69": 95390,
+        "BREAK LAW": 169946,
+        "Hana ni Natte": 402370,
+        "Hestia": 283157,
+        "Kokoronashi": 91844,
+        "Furin Kagerou": 298152
+    },
+    "[LS]skob": {
+        "Sekai ga Katachi Nakushitemo": 340933,
+        "Crystallite Dream": 174925,
+        "Karada wa Shoujiki datte Ittenno": 196215,
+        "RAMSING": 51956,
+        "Apollo 69": 72171,
+        "BREAK LAW": 179360,
+        "Hana ni Natte": 128569,
+        "Hestia": 25203,
+        "Kokoronashi": 49870,
+        "Furin Kagerou": 70422
     },
     "nairuzu": {
         "Sekai ga Katachi Nakushitemo": 680683,
@@ -238,5 +358,17 @@
         "Hestia": 712034,
         "Kokoronashi": 1044130,
         "Furin Kagerou": 528169
+    },
+    "aquaria_": {
+        "Sekai ga Katachi Nakushitemo": 609928,
+        "Crystallite Dream": 728427,
+        "Karada wa Shoujiki datte Ittenno": 574578,
+        "RAMSING": 365341,
+        "Apollo 69": 356932,
+        "BREAK LAW": 301778,
+        "Hana ni Natte": 559736,
+        "Hestia": 604572,
+        "Kokoronashi": 613427,
+        "Furin Kagerou": 395225
     }
 }
