@@ -15,15 +15,16 @@
     <link rel="stylesheet" href="css/mainNavbar.css">
     <link rel="stylesheet" href="css/mappoolNavbar.css">
     <link rel="stylesheet" href="css/mappoolCard.css">
+    <link rel="stylesheet" href="css/statsTable.css">
     <title>Stats</title>
 </head>
 <body id="stats">
     <div id="nav-placeholder">
     </div>
-    <div id="mappoolNavWrapper">
-      <div id="mappoolNavbarContainer">
-          <nav id="mappoolNavbar">
-              <ul id="mappoolLinks">
+    <div id="statNavWrapper">
+      <div id="statNavbarContainer">
+          <nav id="statNavbar">
+              <ul id="statLinks">
                   <li><a class="nav-link active" id="qualifiers" data-active="qualifiers" data-stage="qualifiers">Qualifiers</a></li>
                   <li><a class="nav-link" id="quarterfinals" data-active="quarterFinals" data-stage="quarterfinals">Quarterfinals</a></li>
                   <li><a class="nav-link" id="semifinals" data-active="semifinals" data-stage="semifinals">Semifinals</a></li>
@@ -34,12 +35,35 @@
       </div>
   </div>
 
-  <div id="mappoolListWrapper">
+  <div id="statListWrapper">
     <div id="containerCornerBackground">
-        <div id="mappoolCardContainer">
-            <div class="coming-soon-v">
+        <div id="statContainer">
+            <h1 id="header">Qualifiers Result</h1>
+            <div class="coming-soon">
                 Coming Soon
             </div>
+            <table id="statsTable">
+                <thead>
+                    <th class="rowHeader">
+                        <button id="placementButton">Placement</button>
+                    </th>
+                    <th id="seed"><img class="seedIcon" src="assets/images/seed.svg" alt="Seed Icon"></th>
+                    <th id="avg">AVG</th>
+                    <th class="nm">NM1</th>
+                    <th class="nm">NM2</th>
+                    <th class="nm">NM3</th>
+                    <th class="nm">NM4</th>
+                    <th class="hd">HD1</th>
+                    <th class="hd">HD2</th>
+                    <th class="hr">HR1</th>
+                    <th class="hr">HR2</th>
+                    <th class="dt">DT1</th>
+                    <th class="dt">DT2</th>
+                </thead>
+                <tbody id="userTableBody">
+                    
+                </tbody>
+            </table>
         </div>
     </div>
 </div>
@@ -48,9 +72,8 @@
       $("#nav-placeholder").load("components/navbar.html");
     });
     </script>
-  <script src="js/init.js"></script>
-  <script src="js/mappoolLoader.js"></script>
-  <script src="js/util.js"></script>
+  <script src="js/statsInit.js"></script>
+  <script src="js/statsLoader.js"></script>
   <script src="js/linkSelection.js"></script>
 
 </body>

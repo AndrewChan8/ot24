@@ -1,4 +1,4 @@
-#mappoolListWrapper {
+#mappoolListWrapper, #statListWrapper{
     display: flex;
     justify-content: center;
 }
@@ -11,7 +11,7 @@
 
 }
 
-#mappoolCardContainer {
+#mappoolCardContainer, #statContainer{
     background-color: #145f48;
     border-radius: 3rem;
     display: flex;

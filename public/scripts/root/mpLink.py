@@ -7,7 +7,7 @@ load_dotenv()
 
 apiKey = os.getenv('apiKey')
 
-def getMpData(mpLink):
+def getMpData(mpLink, beatmaps):
   matchUrl = f"https://osu.ppy.sh/api/get_match?k={apiKey}&mp={mpLink}"
   userUrl = f"https://osu.ppy.sh/api/get_user?k={apiKey}&u="
   beatmapUrl = f"https://osu.ppy.sh/api/get_beatmaps?k={apiKey}&b="
@@ -17,18 +17,6 @@ def getMpData(mpLink):
   playerIDs = []
   usernames = []
   matchScores = {}
-  beatmaps = [
-"Sekai ga Katachi Nakushitemo",
-"Crystallite Dream",
-"Karada wa Shoujiki datte Ittenno",
-"RAMSING",
-"Apollo 69",
-"BREAK LAW",
-"Hana ni Natte",
-"Hestia",
-"Kokoronashi",
-"Furin Kagerou"
-]
 
   for eachMap in match:
     getBeatmap = requests.get(beatmapUrl + eachMap['beatmap_id']).json()
@@ -45,8 +33,8 @@ def getMpData(mpLink):
       map_score = score["score"]
       currentPlayer = usernames[playerIDs.index(score['user_id'])]
       matchScores[currentPlayer][beatmap] = int(map_score)
-
-  return beatmaps, matchScores
+  
+  return matchScores
 
 def promptLinks():
   mpLinks = []
@@ -66,37 +54,20 @@ def promptLinks():
   return mpLinks
 
 if __name__ == "__main__":
-  mpLinks = [
-116165171,
-116087727,
-116162129,
-116174469,
-116164711,
-116086530,
-116140974,
-116183207,
-116086530,
-116140974,
-116165171,
-116079414,
-116171459,
-116096627,
-116083928,
-116183250,
-116164891,
-116140974,
-116091924,
-116164821,
-116164937,
-116079485,
-116084051
-  ]
-
   # mpLinks = promptLinks()
 
   name = input("Enter mappool name:")
+
+  with open(f'../rawMpLinks/{name}.txt', 'r') as file:
+    mpLinks = [line.strip() for line in file]
+
+  with open(f'../mappools/{name}.json', 'r') as file:
+    data = json.load(file)
+
+  beatmaps = [data[map]["title"] for map in data]
+
   for link in mpLinks:
-    beatmaps, results = getMpData(link)
+    results = getMpData(link, beatmaps)
 
     if not os.path.exists(f'../mpResults/{name}.json'):
       with open(f'../mpResults/{name}.json', 'w') as file:
@@ -107,13 +78,26 @@ if __name__ == "__main__":
         data = json.load(file)
       except json.JSONDecodeError:
         data = {}
+
     # Append the new data
     if "beatmaps" not in data:
       data["beatmaps"] = beatmaps
 
     for result in results:
-      data[result] = results[result]
-      data[result]['mpLink'] = int(link)
+      scores = {}
+      if result in data:
+        combined = {**data[result], **results[result]}
+        scores = combined
+      else:
+        scores = results[result]
+
+      for map in beatmaps:
+        if map not in scores:
+          scores[map] = 0
+          
+      sorted_maps = {key: scores[key] for key in beatmaps if key in scores}
+
+      data[result] = sorted_maps
 
     # Write the updated data back to the file
     with open(f'../mpResults/{name}.json', 'w') as file:

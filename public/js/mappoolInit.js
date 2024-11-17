@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function() {
-    const defaultTab = "qualifiers";
+    const defaultTab = "mappools/qualifiers";
     loadMappoolData(defaultTab);
 
     const tabs = document.querySelectorAll('.nav-link');
