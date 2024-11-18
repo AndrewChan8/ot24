@@ -1,0 +1,48 @@
+#teamCard{
+    display: flex;
+    justify-content: center;
+    background-color: #50a77a;
+    border-radius: 15px;
+    height: 150px;
+}
+
+p {
+    position: absolute;
+    z-index: 5;
+
+}
+
+td:last-child{
+    text-align: right;
+}
+
+table, p {
+    color: white;
+    font-family: "Fredoka", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    margin: 10px 15px;
+}
+
+.teamName{
+    font-size: 20px;
+}
+
+.teamPhoto{
+    height: 100%;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+.seedBackground {
+    position: absolute;
+}
+
+.teamPhotoBorder {
+    position: absolute;
+    top: 0; right: -2px;
+}
+
+.photoDecor {
+    position: relative;
+}
