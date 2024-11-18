@@ -1,17 +1,16 @@
-#teamCard{
+.teamCard{
     display: flex;
     justify-content: space-between;
     background-color: #50a77a;
     border-radius: 15px;
     height: 150px;
     width: 400px;
+    margin: 25px 20px;
 }
 
 #teamInfo {
     align-content: center;
 }
-
-
 
 td:last-child{
     text-align: right;
@@ -37,8 +36,11 @@ p {
 }
 
 .teamName{
-    font-size: 20px;
+    font-size: 19px;
     text-align: center;
+    visibility: visible;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
 
 .teamPhoto{
@@ -58,7 +60,13 @@ p {
     top: 0; right: -2px;
 }
 
-.photoDecor {
+.teamProfile {
     position: relative;
     width: 150px;
 }
+
+#teamContainer {
+    display: flex;
+    justify-content: space-evenly;
+}
+
