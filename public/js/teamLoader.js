@@ -5,7 +5,8 @@ const teamIcon = [
     "miku",
     "MainsDads",
     "SnowWhirled",
-    "MonogatariGif"
+    "MonogatariGif",
+    "HorseFish"
 ]
 
 function loadTeams(teams){
@@ -64,7 +65,9 @@ function loadTeams(teams){
             const player = teams[team][players];
             const row = document.createElement("tr");
 
-            const playerName = document.createElement("td");
+            const playerName = document.createElement("a");
+            playerName.href = `https://osu.ppy.sh/users/${player[2]}`;
+            playerName.target = "_blank";
             playerName.classList.add("playerName");
             playerName.textContent = player[0];
 

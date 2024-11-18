@@ -71,3 +71,13 @@ p {
     padding: 25px;
 }
 
+.playerName {
+    cursor: pointer; 
+    color: white;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    text-decoration: none;
+}
+
+.playerName:hover {
+    color: rgb(204, 204, 204);
+}
