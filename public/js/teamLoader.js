@@ -1,6 +1,6 @@
 const teamIcon = [
     "miku",
-    "miku",
+    "HyperdimensionHatsuneKita",
     "ForcedHD2",
     "miku",
     "MainsDads",
