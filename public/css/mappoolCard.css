@@ -1,4 +1,4 @@
-#mappoolListWrapper, #statListWrapper{
+#mappoolListWrapper, #statListWrapper, #teamListWrapper{
     display: flex;
     justify-content: center;
 }
@@ -21,6 +21,17 @@
     height: fit-content;
 }
 
+#teamContainer{
+    background-color: #145f48;
+    border-radius: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1500px;
+    height: fit-content;
+    flex-wrap: wrap;
+
+}
 
 #nm, #hd, #hr, #dt, #fm, #tb, #packButton {
     display: flex;
@@ -207,17 +218,18 @@
     padding: 6px;
     line-height: 1rem;
     font-size: 1.2rem;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    /*come back to this later to try and fix this, but for now just hide it so it doesn't break on Edge*/
     transition: opacity 0.3s ease;
     position: absolute;
     visibility: visible;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 285px;
 }
 
+
+
 #songInfo {
-    
     opacity: 1;
 }
 

@@ -1,15 +1,15 @@
-#teamCard{
+.teamCard{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     background-color: #50a77a;
     border-radius: 15px;
     height: 150px;
+    width: 400px;
+    margin: 25px 0px;
 }
 
-p {
-    position: absolute;
-    z-index: 5;
-
+.teamInfo {
+    align-content: center;
 }
 
 td:last-child{
@@ -20,12 +20,27 @@ table, p {
     color: white;
     font-family: "Fredoka", system-ui;
     font-optical-sizing: auto;
+    font-size: 1.25em;
     font-weight: 700;
     margin: 10px 15px;
+    width: 220px;
+}
+
+p {
+    position: absolute;
+    z-index: 5;
+    text-align: center;
+    width: auto;
+    margin-top: 12px;
+    margin-left: 21px;
 }
 
 .teamName{
-    font-size: 20px;
+    font-size: 19px;
+    text-align: center;
+    visibility: visible;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
 
 .teamPhoto{
@@ -36,6 +51,8 @@ table, p {
 
 .seedBackground {
     position: absolute;
+    margin-left: 3px;
+    margin-top: 3px;
 }
 
 .teamPhotoBorder {
@@ -43,6 +60,24 @@ table, p {
     top: 0; right: -2px;
 }
 
-.photoDecor {
+.teamProfile {
     position: relative;
+    width: 150px;
+}
+
+#teamContainer {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 25px;
+}
+
+.playerName {
+    cursor: pointer; 
+    color: white;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    text-decoration: none;
+}
+
+.playerName:hover {
+    color: rgb(204, 204, 204);
 }
