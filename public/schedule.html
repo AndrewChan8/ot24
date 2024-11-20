@@ -16,9 +16,13 @@
     <link rel="stylesheet" href="css/mappoolNavbar.css">
     <link rel="stylesheet" href="css/mappoolCard.css">
     <link rel="stylesheet" href="css/schedule.css">
-
-
     <title>Schedule</title>
+    <style>
+        .content-section {
+            display: none; /* Hide all sections by default */
+        }
+        .default { display: block; }
+      </style>
 </head>
 <body id="schedule">
   <div id="nav-placeholder"></div>
@@ -26,10 +30,10 @@
       <div id="mappoolNavbarContainer">
           <nav id="mappoolNavbar">
               <ul id="mappoolLinks">
-                  <li><a class="nav-link active" id="quarterfinals" data-active="quarterFinals" data-stage="quarterfinals">Quarterfinals</a></li>
-                  <li><a class="nav-link" id="semifinals" data-active="semifinals" data-stage="semifinals">Semifinals</a></li>
-                  <li><a class="nav-link" id="finals" data-active="finals" data-stage="finals">Finals</a></li>
-                  <li><a class="nav-link" id="grandfinals" data-active="grandFinals" data-stage="grandfinals">Grandfinals</a></li>
+                  <li><a class="nav-link active" id="quarterfinals" data-active="quarterfinals" data-stage="quarterfinals" data-target="quarterFinals">Quarterfinals</a></li>
+                  <li><a class="nav-link" id="semifinals" data-active="semifinals" data-stage="semifinals" data-target="semiFinals">Semifinals</a></li>
+                  <li><a class="nav-link" id="finals" data-active="finals" data-stage="finals" data-target="Finals">Finals</a></li>
+                  <li><a class="nav-link" id="grandfinals" data-active="grandFinals" data-stage="grandfinals" data-target="grandFinals">Grandfinals</a></li>
               </ul>
           </nav>
       </div>
@@ -38,23 +42,45 @@
   <div id="mappoolListWrapper">
       <div id="containerCornerBackground">
           <div id="mappoolCardContainer">
-              <p>No Schedule Available</p>
-              <div id="quarterFinals"></div>
-              <div id="semiFinals"></div>
-              <div id="finals"></div>
-              <div id="grandFinals"></div>
-
+                <div id="quarterFinals" class="content-section default">
+                    <div id="quarterFinals"></div>
+                </div>
+                <div id="semiFinals" class="content-section">
+                    <div id="semiFinals"></div>
+                </div>
+                <div id="Finals" class="content-section">
+                <div id="Finals"></div>
+                </div>
+                <div id="grandFinals" class="content-section">
+                <div id="grandFinals"></div>
+                </div>
           </div>
       </div>
   </div>
   
     
-    <script>
+<script>
     $(function(){
       $("#nav-placeholder").load("components/navbar.html");
       $("#quarterFinals").load("components/quarterFinalsSchedule.html");
+      $("#semiFinals").load("components/semiFinalsSchedule.html");
+      $("#grandFinals").load("components/grandFinalsSchedule.html");
+      $("#Finals").load("components/finalsSchedule.html");
+
+
+      // Handle click event for navbar links
+      $(".nav-link").click(function(event) {
+          event.preventDefault(); // Prevent default anchor behavior
+          
+          // Hide all content sections
+          $(".content-section").hide();
+          
+          // Show the target section
+          const target = $(this).data("target");
+          $("#" + target).show();
+        });
     });
-    </script>
+</script>
    <script src="js/init.js"></script>
    <script src="js/mappoolLoader.js"></script>
    <script src="js/linkSelection.js"></script>
