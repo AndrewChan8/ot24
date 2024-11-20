@@ -1,6 +1,6 @@
 const teamIcon = [
     "miku",
-    "miku",
+    "HyperdimensionHatsuneKita",
     "ForcedHD2",
     "miku",
     "MainsDads",
@@ -32,7 +32,7 @@ function loadTeams(teams){
         seed.textContent = `Seed ${counter}`;
         counter++;
         seedbg.src = "assets/images/mappoolCard/mapID.png";
-        console.log(imgCounter);
+    
         teamPhoto.src = `assets/images/teamIcons/${teamIcon[imgCounter]}.png`;
         imgCounter++;
         teamPhotoBorder.src = "assets/images/teamborder.png";
