@@ -1,4 +1,4 @@
-#mappoolListWrapper, #statListWrapper{
+#mappoolListWrapper, #statListWrapper, #teamListWrapper{
     display: flex;
     justify-content: center;
 }
@@ -21,6 +21,17 @@
     height: fit-content;
 }
 
+#teamContainer{
+    background-color: #145f48;
+    border-radius: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1500px;
+    height: fit-content;
+    flex-wrap: wrap;
+
+}
 
 #nm, #hd, #hr, #dt, #fm, #tb, #packButton {
     display: flex;

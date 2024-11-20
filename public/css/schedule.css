@@ -1,33 +1,76 @@
-table, tr, td {
-    color: white;
-    font-family: "Fredoka", system-ui;
-    font-optical-sizing: auto;
-    font-weight: 700;
-    text-align: center;
-    border: 1px solid;
-    border-collapse: collapse;
+.teamA img, .teamB img{
+    height:220px;
+    width: 200px;
+    position: relative;
 }
 
-td{
-    padding: 10px 15px;
-}
-
-table tr:first-child th:first-child {
+.teamA img{
     border-top-left-radius: 15px;
-}
-table tr:first-child th:last-child {
-    border-top-right-radius: 15px;
-}
-
-table tr:last-child td:first-child {
     border-bottom-left-radius: 15px;
 }
 
-table tr:last-child td:last-child {
+.teamB img {
+    border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
 }
 
-th, tr {
-    text-align: center;
+.matchWrapper {
+    display: flex; 
+    justify-content: center;
+    margin: 20px 15px;
+    background-color: #50a77a;
+    border-radius: 15px;
+    position: relative;
+    height: 220px;
 }
 
+img.borderLeft, img.borderRight{
+    height:220px;
+    width: 15px;
+    position: absolute;
+    z-index: 2;
+}
+
+img.borderLeft{
+    left: 185px;
+}
+
+img.borderRight{
+    right: 185px;
+}
+
+.matchInfo {
+    font-family: "Fredoka", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    color: white;
+    text-align: center;
+    margin: 10px 15px;
+    font-size: 15px
+}
+
+/* table, tr, td {
+    border: 1px solid;
+    border-collapse: collapse;
+}  */
+
+.score {
+    font-size: 35px;
+}
+
+.time, .date{
+    font-size: 25px;
+}
+
+.positions{
+    padding-top: 14px;
+    font-size: 20px;
+}
+
+.playerA{
+    text-align: left;
+}
+
+.playerB{
+    text-align: right;
+}
