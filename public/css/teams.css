@@ -3,9 +3,10 @@
     justify-content: space-between;
     background-color: #50a77a;
     border-radius: 15px;
-    height: 150px;
+    height: 160px;
     width: 400px;
-    margin: 25px 0px;
+    margin: 25px 0;
+    overflow: hidden;
 }
 
 .teamInfo {
@@ -39,8 +40,11 @@ p {
     font-size: 16px;
     text-align: center;
     visibility: visible;
-    white-space: nowrap;
-    text-overflow: ellipsis;
+
+    overflow: hidden;        /* Hides overflowing content */
+    text-overflow: ellipsis; 
+    max-width: 100%; 
+    
 }
 
 .teamPhoto{
@@ -57,7 +61,8 @@ p {
 
 .teamPhotoBorder {
     position: absolute;
-    top: 0; right: -2px;
+    top: 0; right: -10px;
+    height: 160px;
 }
 
 .teamProfile {
