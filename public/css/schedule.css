@@ -1,15 +1,23 @@
-.teamA img, .teamB img{
-    height:220px;
-    width: 200px;
+.matchHeader {
+    font-family: "Climate Crisis", sans-serif;
+    font-size: 3rem;
+    color: white;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.teamImageA img, .teamImageB img{
+    height:230px;
+    width: 230px;
     position: relative;
 }
 
-.teamA img{
+.teamImageA img{
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
 }
 
-.teamB img {
+.teamImageB img {
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
 }
@@ -17,26 +25,28 @@
 .matchWrapper {
     display: flex; 
     justify-content: center;
-    margin: 20px 15px;
+    margin: 0px 20px 15px;
     background-color: #50a77a;
     border-radius: 15px;
     position: relative;
-    height: 220px;
+    height: 230px;
 }
 
 img.borderLeft, img.borderRight{
-    height:220px;
+    height: 230px;
     width: 15px;
     position: absolute;
     z-index: 2;
+    border-radius: 0;
 }
 
 img.borderLeft{
-    left: 185px;
+    left: 215px;
+    transform: scaleX(-1);
 }
 
 img.borderRight{
-    right: 185px;
+    right: 215px;
 }
 
 .matchInfo {
@@ -45,8 +55,8 @@ img.borderRight{
     font-weight: 700;
     color: white;
     text-align: center;
-    margin: 10px 15px;
-    font-size: 15px
+    margin: 5px 15px;
+    font-size: 16px;
 }
 
 /* table, tr, td {
@@ -54,23 +64,45 @@ img.borderRight{
     border-collapse: collapse;
 }  */
 
-.score {
-    font-size: 35px;
+table {
+    table-layout: fixed;
+    empty-cells: show;
+    width: 500px;
+    height: 200px
 }
 
-.time, .date{
+.score {
+    font-size: 48px;
+}
+
+.time{
     font-size: 25px;
+}
+.date {
+    font-size: 18px;
 }
 
 .positions{
-    padding-top: 14px;
+    padding-top: 10px;
     font-size: 20px;
 }
 
 .playerA{
     text-align: left;
+    font-size: 18px;
 }
 
 .playerB{
     text-align: right;
+    font-size: 18px;
+}
+
+.teamA{
+    text-align: left;
+    font-size: 24px;
+}
+
+.teamB{
+    text-align: right;
+    font-size: 24px;
 }
