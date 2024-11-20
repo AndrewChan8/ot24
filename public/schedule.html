@@ -15,19 +15,18 @@
     <link rel="stylesheet" href="css/mainNavbar.css">
     <link rel="stylesheet" href="css/mappoolNavbar.css">
     <link rel="stylesheet" href="css/mappoolCard.css">
+    <link rel="stylesheet" href="css/schedule.css">
+
 
     <title>Schedule</title>
 </head>
 <body id="schedule">
-  <div id="nav-placeholder">
-  </div>
   <div id="nav-placeholder"></div>
   <div id="mappoolNavWrapper">
       <div id="mappoolNavbarContainer">
           <nav id="mappoolNavbar">
               <ul id="mappoolLinks">
-                  <li><a class="nav-link active" id="qualifiers" data-active="qualifiers" data-stage="qualifiers">Qualifiers</a></li>
-                  <li><a class="nav-link" id="quarterfinals" data-active="quarterFinals" data-stage="quarterfinals">Quarterfinals</a></li>
+                  <li><a class="nav-link active" id="quarterfinals" data-active="quarterFinals" data-stage="quarterfinals">Quarterfinals</a></li>
                   <li><a class="nav-link" id="semifinals" data-active="semifinals" data-stage="semifinals">Semifinals</a></li>
                   <li><a class="nav-link" id="finals" data-active="finals" data-stage="finals">Finals</a></li>
                   <li><a class="nav-link" id="grandfinals" data-active="grandFinals" data-stage="grandfinals">Grandfinals</a></li>
@@ -39,16 +38,17 @@
   <div id="mappoolListWrapper">
       <div id="containerCornerBackground">
           <div id="mappoolCardContainer">
-              <div class="coming-soon-v">
-                  <p>Coming Soon</p>
-              </div>
+              <div id="quarterFinals"></div>
           </div>
       </div>
   </div>
+  
     
     <script>
     $(function(){
       $("#nav-placeholder").load("components/navbar.html");
+      $("#quarterFinals").load("components/quarterFinalsSchedule.html");
+
     });
     </script>
    <script src="js/init.js"></script>
