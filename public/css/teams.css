@@ -86,11 +86,3 @@ p {
 .playerName:hover {
     color: rgb(204, 204, 204);
 }
-
-
-#noSchedule {
-    font-size: 80px;
-    color: white;
-    font-family: "Climate Crisis", sans-serif;
-    padding: 15px 20px;
-}
