@@ -2,7 +2,7 @@ const teamIcon = [
     "miku",
     "HyperdimensionHatsuneKita",
     "ForcedHD2",
-    "miku",
+    "SmirkCat2",
     "MainsDads",
     "SnowWhirled",
     "MonogatariGif",
