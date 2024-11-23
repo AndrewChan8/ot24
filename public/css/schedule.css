@@ -75,6 +75,10 @@ table {
     font-size: 48px;
 }
 
+a {
+    color: white;
+}
+
 .time{
     font-size: 25px;
 }
@@ -85,6 +89,10 @@ table {
 .positions{
     padding-top: 10px;
     font-size: 20px;
+}
+
+.staff{
+    text-wrap: nowrap;
 }
 
 .playerA{
