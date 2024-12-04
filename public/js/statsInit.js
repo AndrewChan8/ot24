@@ -35,25 +35,29 @@ switchBtn.addEventListener("click", function() {
 
 function updateTournamentTitle(activeTab) {
     let title = "";
+    let sheetLink = "";
     console.log(activeTab);
     switch (activeTab) {
         case "qualifiers":
             title = "Qualifiers Results";
             break;
         case "quarterFinals":
-            title = "Quarterfinals Results";
+            title = "Quarterfinals Stats Sheet";
+            sheetLink = "https://docs.google.com/spreadsheets/d/1_h45JqbnJKA3uWHueKBTzadfu27KN_J-9ciF25FwhLE/edit?usp=sharing"
             break;
         case "semifinals":
-            title = "Semifinals Results";
+            title = "Semifinals Stats Sheet";
+            sheetLink = "https://docs.google.com/spreadsheets/d/1QlxLJyHsESJsrmV-b1Ti_ywHIw0lmrORhd1oYfpeFnU/edit?usp=sharing"
             break;
         case "finals":
-            title = "Finals Results";
+            title = "Finals Stats Sheet";
             break;
         case "grandFinals":
-            title = "Grandfinals Results";
+            title = "Grandfinals Stats Sheet";
             break;
     }
 
     // Set the new title to the tournamentTitle element
     tournamentTitle.textContent = title;
+    tournamentTitle.href = sheetLink;
 }

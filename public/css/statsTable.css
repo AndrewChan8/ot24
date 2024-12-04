@@ -25,7 +25,8 @@ th, tr {
     display: flex;
     align-items: center;
     flex-direction: column;
-    padding: 15px 15px;
+    padding: 10px 25px;
+    margin: 10px 0px 40px 0px;
     font-family: "Climate Crisis", sans-serif;
     color: white;
     font-size: 3em;
