@@ -35,11 +35,12 @@ switchBtn.addEventListener("click", function() {
 
 function updateTournamentTitle(activeTab) {
     let title = "";
-    let sheetLink = "";
+    let sheetLink = "#";
     console.log(activeTab);
     switch (activeTab) {
         case "qualifiers":
             title = "Qualifiers Results";
+            sheetLink = "#";
             break;
         case "quarterFinals":
             title = "Quarterfinals Stats Sheet";
@@ -51,9 +52,11 @@ function updateTournamentTitle(activeTab) {
             break;
         case "finals":
             title = "Finals Stats Sheet";
+            sheetLink = "#";
             break;
         case "grandFinals":
             title = "Grandfinals Stats Sheet";
+            sheetLink = "#";
             break;
     }
 
